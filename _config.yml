@@ -1,0 +1,17 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Dust and Shadows
+tagline:          'pulvis et umbra sumus'
+
+
+author:
+  name:           'Alex Westphal'
+  url:
+
+paginate:         5

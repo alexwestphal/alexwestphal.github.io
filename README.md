@@ -1,4 +1,4 @@
-phantomspectre.github.io
-========================
+# Dust and Shadows
 
-Personal Website
+Personal Site of Alex Westphal
+
