@@ -1,4 +1,4 @@
 # Dust and Shadows
 
-Personal Site of Alex Westphal
+Personal Site and Blog of Alex Westphal
 
