@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hello World Randomly
+title: Hello World (Randomly)
 tags: java, random
 ---
 
