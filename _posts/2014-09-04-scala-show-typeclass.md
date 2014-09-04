@@ -64,7 +64,7 @@ doing that:
 {% highlight scala %}
 object Show {
     ⋮
-    def showA[A][A]: Show[A] = new Show[A] {
+    def showA[A]: Show[A] = new Show[A] {
         def shows(f: A): String = f.toString
     }
 }
