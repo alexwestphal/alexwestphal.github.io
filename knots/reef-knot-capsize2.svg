@@ -26,11 +26,12 @@
 
     <!-- Blue Rope - Running End Mid -->
     <path d="M 110 40 C 110 20, 120 20, 140 20" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 110 40 C 110 20, 120 20, 140 20" stroke="#22D" stroke-width="9" fill="transparent"/>
+    <path d="M 110 40 C 110 20, 120 20, 140 20" stroke="#22D" stroke-width="8" fill="transparent"/>
 
     <!-- Blue Rope - Standing End Mid -->
     <path d="M 110 60 C 110 80, 120 80, 140 80" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 110 60 C 110 80, 120 80, 140 80" stroke="#22D" stroke-width="9" fill="transparent"/>
+    <path d="M 110 60 C 110 80, 120 80, 140 80" stroke="#22D" stroke-width="8" fill="transparent"/>
+
 
     <!-- Red Rope - Running End Cap -->
     <path d="M 126 5 h 8" stroke="black" stroke-width="1" fill="transparent"/>

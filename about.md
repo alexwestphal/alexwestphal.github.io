@@ -6,8 +6,8 @@ title: About
 Hi, My name is Alex, and this is my personal website/blog.
 
 Professionally i'm a Software Engineer for **OnPoint Digital, Inc.** We develop web and mobile enterprise e-learning
-solutions. My areas of interest include compilers, concurrency, cryptography, mathematics, programming languages and
-security.
+solutions. My areas of interest include abstract mathematics, compilers, concurrency, cryptography, networking,
+programming languages and security.
 
 On a volunteer basis, I hold the following roles:
 
