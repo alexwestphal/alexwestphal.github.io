@@ -116,8 +116,8 @@ implicit def showTuple2[A: Show, B: Show]: Show[(A,B)] = Show show {
 
 ## Better Syntax
 
-Having to call `Show[A].show(a)` is still a bit clunky, what if we could reduce it to `a.show`? We can this by defining
-a ShowOps trait with appropriate implicit conversions:
+Having to call `Show[A].show(a)` is still a bit clunky, what if we could reduce it to `a.show`? We can do this by
+defining a ShowOps trait with appropriate implicit conversions:
 
 {% highlight scala %}
 trait ShowOps[A] {
@@ -136,7 +136,7 @@ implicit def ToShowOps[A: Show](a: A) = new ShowOps[A] {
 Now use is really easy:
 
 {% highlight scala %}
-def bar[A: Show](a: A): String = a.show + "bar"
+def bar[A: Show](a: A): String = a.show + ".bar"
 {% endhighlight %}
 
 ## Scalaz
