@@ -143,4 +143,4 @@ def bar[A: Show](a: A): String = a.show + ".bar"
 
 We now pretty much have the [scalaz.Show](http://docs.typelevel.org/api/scalaz/stable/7.0.4/doc/#scalaz.Show)
 implementation except that scalaz uses a [Cord](http://docs.typelevel.org/api/scalaz/stable/7.0.4/doc/#scalaz.Cord)
-rather than a String, for performance reasons.
+rather than a String, for performance reasons. I plan to explore this in a latter post.
