@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's Jekyll?
-
+author: Alex Westphal
 tags: jekyll github
 ---
 
