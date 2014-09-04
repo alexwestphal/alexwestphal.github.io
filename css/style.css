@@ -367,3 +367,9 @@ a.sidebar-nav-item:focus {
 .post-list li a:hover small {
   color: inherit;
 }
+
+
+@media print {
+    .sidebar, .related { display: none; }
+    blockquote { color: #9a9a9a; }
+}

@@ -1,24 +1,72 @@
 ---
 layout: post
 title: The Reef Knot
+author: Alex Westphal
 tags: scouts knots
 ---
 
-When most people think of Scouting and knots, the first knot that springs to mind is the humble Reef Knot. This ancient
-knot has come to symbolise Scouting and for most Scouts it is the first knot they learn.
+When people think of Scouting and knots, the first knot that tends to spring to mind is the humble Reef knot. This
+ancient knot has come to symbolise Scouting and for most Scouts it is the first knot they learn.
 
-<img width=360 src="/knots/reef-knot.svg"/>
+![Reef Knot Diagram](/knots/reef-knot.svg)
 
-Many people consider the purpose of the Reef Knot is that of joining two ropes or lines. This article explains why it is
-entirely unsuited to that purpose.
 
-## History
+The Reef knot is formed by tying a left Overhand knot and then a right Overhand knot, or vice versa. While technically a
+binding knot, the Reef knot has widespread use as a bend knot, a purpose for which it is entirely unsuited.
 
-The Reef Knot is known to be at least 4000 years old.
+
+## History and Uses
+
+The Reef knot is thought to be between 4000 and 9000 years old. It has been used since ancient times to fasten belts,
+sashes, and bandages. The Reef knot is particularly excellent for binding bandages as it lines flat when tied in cloth.
+
+To the ancient Greeks it was known as the Hercules knot and they believed that wounds heal more quickly when bound with
+a "Hercules knot".
+
+The modern name "Reef knot" and alternate name "Square knot" date to the 18th century where it was used extensively in
+the [reefing](http://en.wikipedia.org/wiki/Reefing) of sails on [square rig](http://en.wikipedia.org/wiki/Square_rig)
+sailing ships. A prominent benefit of using the Reef knot for reefing is that a sailor can collapse the knot one handed
+by pulling one of the running ends across the knot, thus the weight of the sail can untie the knot and unfurl the sail.
+
 
 ## Use in Scouting
+
+TODO
+
 
 ## Dangers
 
 >  Misused reef knots have caused more deaths and injuries than all other knots combined - The Ashley Book of Knots
+
+If one of the running ends of the Reef knot is pulled across the knot, it will capsize into a Girth hitch which has
+insufficient friction to keep the ropes from separating.
+
+![Pull Running End Across Knot](/knots/reef-knot-capsize1.svg)
+![Knot Capsize Into Girth Hitch](/knots/reef-knot-capsize2.svg)
+![Knot Falls Apart](/knots/reef-knot-capsize3.svg)
+
+While beneficial in unfurling reefed sails as mentioned above, this can occur when using the Reef knot as a bend either
+by catching on something or simply by shaking the rope.
+
+
+## Variants
+
+There exist three variants of the Reef Knot that can arise from tying the Reef Knot incorrectly.
+
+- The **Granny Knot** is a common mistake that arises from tying two Overhand knots of the same
+[handedness](http://en.wiktionary.org/wiki/handedness). A common strategy to avoid making this mistake is to use the
+mnemonic "right over left; left over right". ![Granny Knot Diagram](/knots/granny-knot.svg)
+
+- The **Thief Knot** is interesting because if one ignores the difference between the running and standing ends of the
+rope, it is equivalent to the Reef knot. The thief knot is a common result when trying to tie the Reef knot using a
+bight and the running end of the other rope. ![Thief Knot Diagram](/knots/thief-knot.svg)
+
+- The name **Grief Knot** is a Portmanteau of "Granny" and "Thief" and is so named because it is effectively the
+combination of the two. If one ignores the difference between the running and standing ends of the rope, it is
+equivalent to the Granny knot. Yet it also has the issue of the thief knot, that of the running ends exiting the knot
+on diagonally opposite sides. Unlike the Granny of Thief knots it won't bind onto the rope, and thus any tension will
+cause the ropes to pull through. For this reason it doesn't actually meet the formal definition of a knot.
+![Grief Knot Diagram](/knots/grief-knot.svg)
+
+None of these three variants have any redeeming features and should never be used for any purpose.
 

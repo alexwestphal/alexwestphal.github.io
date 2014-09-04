@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Hello World (Randomly)
-tags: java, random
+author: Alex Westphal
+tags: java random
 ---
 
-Three years ago I posted the following code as a Gist. It is still rather intriguing, so I've decided to dig into it
-and explain why it works.
+Three years ago I ran across the following code in a discussion and posted as a Gist. It is still rather intriguing,
+so I've decided to dig into it and explain why it works.
 
 {% highlight java %}
 import java.util.Random;

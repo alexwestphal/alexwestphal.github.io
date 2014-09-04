@@ -1,0 +1,46 @@
+<!--
+    Thief Knot Diagram
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="400" height="200" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Blue Rope - Bight -->
+    <path d="M 80 20 C 50 20, 50 80, 80 80" stroke="black" stroke-width="9" stroke-linejoin="round" fill="transparent"/>
+    <path d="M 80 20 C 50 20, 50 80, 80 80" stroke="#22D" stroke-width="8" stroke-linejoin="round" fill="transparent"/>
+
+    <!-- Red Rope - Running End -->
+    <path d="M 30 60 H 60 C 80 60, 90 70, 90 70 S 100 80, 120 80" stroke="black" stroke-width="9" stroke-linejoin="round" fill="transparent"/>
+    <path d="M 30 60 H 60 C 80 60, 90 70, 90 70 S 100 80, 120 80" stroke="#D44" stroke-width="8" stroke-linejoin="round" fill="transparent"/>
+
+    <!-- Red Rope - Standing End -->
+    <path d="M 0 40 H 60 C 80 40, 90 30, 90 30 S 100 20, 120 20" stroke="black" stroke-width="9" stroke-linejoin="round" fill="transparent"/>
+    <path d="M 0 40 H 60 C 80 40, 90 30, 90 30 S 100 20, 120 20" stroke="#D44" stroke-width="8" stroke-linejoin="round" fill="transparent"/>
+
+    <!-- Blue Rope - Running End -->
+    <path d="M 170 40 H 140 C 120 40, 110 30, 110 30 S 100 20, 80 20" stroke="black" stroke-width="9" stroke-linejoin="round" fill="transparent"/>
+    <path d="M 170 40 H 140 C 120 40, 110 30, 110 30 S 100 20, 80 20" stroke="#22D" stroke-width="8" stroke-linejoin="round" fill="transparent"/>
+
+    <!-- Blue Rope - Standing End -->
+    <path d="M 200 60 H 140 C 120 60, 110 70, 110 70 S 100 80, 80 80" stroke="black" stroke-width="9" stroke-linejoin="round" fill="transparent"/>
+    <path d="M 200 60 H 140 C 120 60, 110 70, 110 70 S 100 80, 80 80" stroke="#22D" stroke-width="8" stroke-linejoin="round" fill="transparent"/>
+
+    <!-- Red Rope - Bight -->
+    <path d="M 120 20 C 150 20, 150 80, 120 80" stroke="black" stroke-width="9" stroke-linejoin="round" fill="transparent"/>
+    <path d="M 120 20 C 150 20, 150 80, 120 80" stroke="#D44" stroke-width="8" stroke-linejoin="round" fill="transparent"/>
+
+    <!-- Red Rope - Running End Cap -->
+    <path d="M 30 56 v 8" stroke="black" stroke-width="1" fill="transparent"/>
+
+    <!-- Blue Rope - Running End Cap -->
+    <path d="M 170 36 v 8" stroke="black" stroke-width="1" fill="transparent"/>
+
+    <!-- Red Rope - Running End Marks -->
+    <path d="M 32 56 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 34 56 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 36 56 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+
+    <!-- Blue Rope - Running End Marks -->
+    <path d="M 168 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 166 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 164 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+</svg>
