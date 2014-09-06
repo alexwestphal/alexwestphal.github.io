@@ -1,0 +1,57 @@
+<!--
+    Anchor Bend Diagram
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="400" height="200" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+     <defs>
+        <linearGradient id="PipeGradient" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0%" stop-color="#666"/>
+            <stop offset="50%" stop-color="#CCC"/>
+            <stop offset="100%" stop-color="#888"/>
+        </linearGradient>
+      </defs>
+
+    <!-- Wrap Behind -->
+    <path d="M 110 55 C 130 55, 120 60, 140 60" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 110 55 C 130 55, 120 60, 140 60" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Pipe -->
+    <rect x="120" y="0" width="20" height="100" stroke="black" stroke-width="0.25" fill="url(#PipeGradient)"/>
+
+    <!-- Running End -->
+    <path d="M 70 50 C 60 60, 40 60, 20 60" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 70 50 C 60 60, 40 60, 20 60" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Hitches - Section 2 -->
+    <path d="M 115 55 C 115 90, 50 70, 50 35" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 115 55 C 115 90, 50 70, 50 35" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Wrap 2 -->
+    <path d="M 140 55 C 170 55, 85 100, 85 35" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 140 55 C 170 55, 85 100, 85 35" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Standing End -->
+    <path d="M 0 40 H 120" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 0 40 H 120" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Hitches - Section 1 -->
+    <path d="M 85 35 C 85 20, 115 20, 115 50 V 55" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 85 35 C 85 20, 115 20, 115 50 V 55" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Hitches - Section 3 -->
+    <path d="M 50 35 C 50 10, 90 30, 70 50" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 50 35 C 50 10, 90 30, 70 50" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Wrap 1 -->
+    <path d="M 140 40 C 170 40, 75 55, 110 55" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 140 40 C 170 40, 75 55, 110 55" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Running End Cap -->
+    <path d="M 20 56 v 8" stroke="black" stroke-width="1" fill="transparent"/>
+
+    <!-- Running End Marks -->
+    <path d="M 22 56 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 24 56 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 26 56 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+
+</svg>

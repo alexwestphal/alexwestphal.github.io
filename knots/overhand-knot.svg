@@ -1,0 +1,30 @@
+<!--
+    Overhand Knot Diagram
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="400" height="200" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Running End Loop-->
+    <path d="M 80 30 C 50 30, 50 70, 100 70" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 80 30 C 50 30, 50 70, 100 70" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Standing End -->
+    <path d="M 0 50 H 40 C 90 50, 100 30, 120 30" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 0 50 H 40 C 90 50, 100 30, 120 30" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Running End -->
+    <path d="M 170 50 H 160 C 110 50, 100 30, 80 30" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 170 50 H 160 C 110 50, 100 30, 80 30" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Standing End Loop-->
+    <path d="M 120 30 C 150 30, 150 70, 100 70" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 120 30 C 150 30, 150 70, 100 70" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Red Rope - Running End Cap -->
+    <path d="M 170 46 v 8" stroke="black" stroke-width="1" fill="transparent"/>
+
+    <!-- Red Rope - Running End Marks -->
+    <path d="M 168 46 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 166 46 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 164 46 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+</svg>

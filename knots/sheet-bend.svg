@@ -1,0 +1,42 @@
+<!--
+    Sheet Bend Diagram
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="400" height="200" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Blue Rope - Standing End -->
+    <path d="M 200 50 H 135 " stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 200 50 H 135" stroke="#22D" stroke-width="8" fill="transparent"/>
+
+    <!-- Blue Rope - Bight -->
+    <path d="M 90 30 C 70 30, 70 70, 90 70" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 90 30 C 70 30, 70 70, 90 70" stroke="#22D" stroke-width="8" fill="transparent"/>
+
+    <!-- Red Rope -->
+    <path d="M 30 45 H 80 C 100 45, 100 30, 120 30 C 150 30, 150 70, 120 70 C 100 70, 100 55, 80 55 H 0" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 30 45 H 80 C 100 45, 100 30, 120 30 C 150 30, 150 70, 120 70 C 100 70, 100 55, 80 55 H 0" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Blue Rope - Running End -->
+    <path d="M 90 70 C 110 70, 120 50, 120 30 V 10" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 90 70 C 110 70, 120 50, 120 30 V 10" stroke="#22D" stroke-width="8" fill="transparent"/>
+
+    <!-- Blue Rope - Standing End Middle -->
+    <path d="M 135 50 C 110 50, 110 30, 90 30" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 135 50 C 110 50, 110 30, 90 30" stroke="#22D" stroke-width="8" fill="transparent"/>
+
+    <!-- Red Rope - Running End Cap -->
+    <path d="M 30 41 v 8" stroke="black" stroke-width="1" fill="transparent"/>
+
+    <!-- Blue Rope - Running End Cap -->
+    <path d="M 116 10 h 8" stroke="black" stroke-width="1" fill="transparent"/>
+
+    <!-- Red Rope - Running End Marks -->
+    <path d="M 32 41 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 34 41 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 36 41 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+
+    <!-- Blue Rope - Running End Marks -->
+    <path d="M 116 12 h 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 116 14 h 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 116 16 h 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+</svg>

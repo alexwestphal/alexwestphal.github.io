@@ -1,0 +1,53 @@
+<!--
+    Round Turn and Two Half Hitches Diagram
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="400" height="200" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+     <defs>
+        <linearGradient id="PipeGradient" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0%" stop-color="#666"/>
+            <stop offset="50%" stop-color="#CCC"/>
+            <stop offset="100%" stop-color="#888"/>
+        </linearGradient>
+      </defs>
+
+    <!-- Pipe -->
+    <rect x="120" y="0" width="20" height="100" stroke="black" stroke-width="0.25" fill="url(#PipeGradient)"/>
+
+    <!-- Running End -->
+    <path d="M 60 60 C 50 70, 40 70, 20 70" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 60 60 C 50 70, 40 70, 20 70" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Hitches - Section 2 -->
+    <path d="M 100 60 C 80 80, 40 80, 40 45" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 100 60 C 80 80, 40 80, 40 45" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Wrap 2 -->
+    <path d="M 140 65 C 170 65, 80 100, 80 45" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 140 65 C 170 65, 80 100, 80 45" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Standing End -->
+    <path d="M 0 50 H 120" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 0 50 H 120" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Wrap 1 -->
+    <path d="M 140 50 C 170 50, 90 65, 120 65" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 140 50 C 170 50, 90 65, 120 65" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Hitches - Section 1 -->
+    <path d="M 80 45 C 80 20, 120 40, 100 60" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 80 45 C 80 20, 120 40, 100 60" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Hitches - Section 3 -->
+    <path d="M 40 45 C 40 20, 80 40, 60 60" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 40 45 C 40 20, 80 40, 60 60" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Running End Cap -->
+    <path d="M 20 66 v 8" stroke="black" stroke-width="1" fill="transparent"/>
+
+    <!-- Running End Marks -->
+    <path d="M 22 66 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 24 66 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 26 66 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+
+</svg>

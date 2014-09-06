@@ -1,0 +1,42 @@
+<!--
+    Super Munter Hitch Diagram
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="400" height="200" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+     <defs>
+        <linearGradient id="PipeGradient" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0%" stop-color="#666"/>
+            <stop offset="50%" stop-color="#CCC"/>
+            <stop offset="100%" stop-color="#888"/>
+        </linearGradient>
+      </defs>
+
+    <!-- Pipe -->
+    <rect x="120" y="0" width="20" height="100" stroke="black" stroke-width="0.25" fill="url(#PipeGradient)"/>
+
+    <!-- Loop Across Pipe -->
+    <path d="M 140 20 C 160 20, 160 30, 130 30 C 100 30, 100 60, 130 60 C 160 60, 160 45, 140 45" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 140 20 C 160 20, 160 30, 130 30 C 100 30, 100 60, 130 60 C 160 60, 160 45, 140 45" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Standing End -->
+    <path d="M 120 45 H 00" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 120 45 H 00" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Super Loop -->
+    <path d="M 120 20 C 90 20, 90 70, 120 70" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 120 20 C 90 20, 90 70, 120 70" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Running Loop -->
+    <path d="M 140 70 C 160 70, 160 80, 130 80 H 40" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 140 70 C 160 70, 160 80, 130 80 H 40" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+
+    <!-- Running End Cap -->
+    <path d="M 40 76 v 8" stroke="black" stroke-width="1" fill="transparent"/>
+
+    <!-- Running End Marks -->
+    <path d="M 42 76 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 44 76 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 46 76 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+
+</svg>

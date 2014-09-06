@@ -1,0 +1,37 @@
+<!--
+    Clove Hitch Diagram
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="400" height="200" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="PipeGradient" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#666"/>
+            <stop offset="50%" stop-color="#CCC"/>
+            <stop offset="100%" stop-color="#888"/>
+        </linearGradient>
+      </defs>
+
+    <!-- Pipe -->
+    <rect x="0" y="40" width="200" height="20" stroke="black" stroke-width="0.25" fill="url(#PipeGradient)"/>
+
+    <!-- Standing End -->
+    <path d="M 105 100 V 50 C 105 30, 122 30, 122 40" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 105 100 V 50 C 105 30, 122 30, 122 40" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Running End -->
+    <path d="M 95 20 V 50 C 95 70, 78 70, 78 60" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 95 20 V 50 C 95 70, 78 70, 78 60" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Cross Section -->
+    <path d="M 78 40 C 78 15, 122 85, 122 60" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 78 40 C 78 15, 122 85, 122 60" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Running End Cap -->
+    <path d="M 91 20 h 8" stroke="black" stroke-width="1" fill="transparent"/>
+
+
+    <!-- Running End Marks -->
+    <path d="M 91 22 h 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 91 24 h 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 91 26 h 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+</svg>
