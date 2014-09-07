@@ -1,0 +1,70 @@
+<!--
+    Coordinate System Diagrawm
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+        <marker id='head' orient='auto' markerWidth='2' markerHeight='4'
+                refX='0.1' refY='2'>
+          <path d='M0,0 V4 L2,2 Z' fill='black' />
+        </marker>
+        <marker id='tail' orient='auto' markerWidth='2' markerHeight='4'
+                refX='0.1' refY='2'>
+          <path d='M2,0 V4 L0,2 Z' fill='black' />
+        </marker>
+    </defs>
+
+    <rect x="0" y="0" width="100" height="100" fill="#EEE"/>
+
+    <!-- Grid Outline-->
+    <rect x="10" y="10" width="80" height="80" stroke="#888" stroke-width="0.5" fill="#FFF"/>
+
+    <!-- Horizontal Grid Lines -->
+    <line x1="10" x2="90" y1="20" y2="20" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="10" x2="90" y1="30" y2="30" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="10" x2="90" y1="40" y2="40" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="10" x2="90" y1="50" y2="50" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="10" x2="90" y1="60" y2="60" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="10" x2="90" y1="70" y2="70" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="10" x2="90" y1="80" y2="80" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+
+     <!-- Vertical Grid Lines -->
+    <line x1="20" x2="20" y1="10" y2="90" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="30" x2="30" y1="10" y2="90" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="40" x2="40" y1="10" y2="90" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="50" x2="50" y1="10" y2="90" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="60" x2="60" y1="10" y2="90" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="70" x2="70" y1="10" y2="90" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+    <line x1="80" x2="80" y1="10" y2="90" stroke="#BBB" stroke-width="0.5" fill="transparent"/>
+
+    <!-- Origin -->
+    <circle cx="10" cy="10" r="1"/>
+
+    <!-- X Axis -->
+    <line x1="10" x2="92" y1="10" y2="10" stroke="black" stroke-width="1" fill="transparent" marker-end="url(#head)"/>
+
+    <!-- Y Axis -->
+    <line x1="10" x2="10" y1="10" y2="92" stroke="black" stroke-width="1" fill="transparent" marker-end="url(#head)"/>
+
+    <!-- Grid Labels -->
+    <text x="50" y="96" text-anchor="middle" font-size="6">width</text>
+    <text x="96" y="50" text-anchor="middle" font-size="6" transform="rotate(-90 96,50)">height</text>
+
+    <text x="10" y="8" text-anchor="middle" font-size="6">0</text>
+    <text x="6" y="12" text-anchor="middle" font-size="6">0</text>
+
+    <text x="90" y="8" text-anchor="middle" font-size="6">X</text>
+    <text x="6" y="93" text-anchor="middle" font-size="6">Y</text>
+
+    <!-- Object -->
+    <rect x="35" y="35" height="30" width="30" fill="#338"/>
+
+    <!-- Measuring Lines -->
+    <line x1="11" x2="33" y1="35" y2="35" stroke="black" stroke-width="0.75" fill="transparent" marker-start="url(#tail)" marker-end="url(#head)"/>
+    <line x1="35" x2="35" y1="11" y2="33" stroke="black" stroke-width="0.75" fill="transparent" marker-start="url(#tail)" marker-end="url(#head)"/>
+
+    <!-- Measuring Line Labels -->
+    <text x="22.5" y="34" text-anchor="middle" font-size="6">x</text>
+    <text x="32" y="25" text-anchor="middle" font-size="6">y</text>
+</svg>

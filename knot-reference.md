@@ -3,6 +3,9 @@ layout: page
 title: Knot Reference
 ---
 
+If your interested in how these knots are drawn, check out the Drawing Knot Series ([Part 1]({% post_url 2014-09-06-drawing-knots-part1 %}),
+[Part 2]({% post_url 2014-09-07-drawing-knots-part2 %}), [Part 3]({% post_url 2014-09-08-drawing-knots-part3 %})).
+
 - **Alpine Butterfly Bend** -
 
 - **Alpine Butterfly Loop** - A loop knot useful for creating a loop in the middle of a rope. Preferred over the
