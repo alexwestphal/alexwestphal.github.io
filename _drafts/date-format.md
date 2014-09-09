@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dates
+title: Date Formatting
 author: Alex Westphal
 tags: date time
 ---
