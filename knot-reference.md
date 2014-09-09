@@ -4,7 +4,8 @@ title: Knot Reference
 ---
 
 If your interested in how these knots are drawn, check out the Drawing Knot Series ([Part 1]({% post_url 2014-09-06-drawing-knots-part1 %}),
-[Part 2]({% post_url 2014-09-07-drawing-knots-part2 %}), [Part 3]({% post_url 2014-09-08-drawing-knots-part3 %})).
+[Part 2]({% post_url 2014-09-07-drawing-knots-part2 %}), [Part 3]({% post_url 2014-09-08-drawing-knots-part3 %}),
+[Part 4]({% post_url 2014-09-09-drawing-knots-part4 %})).
 
 - **Alpine Butterfly Bend** -
 

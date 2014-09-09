@@ -232,5 +232,5 @@ If we remove the grid we now have a complete knot:
 
 
 
-In Drawing Knots (Part 4) we will look at SVG gradients and arrows and how we can use them to draw complex knots and
-include movement information.
+In [Drawing Knots (Part 4)]({% post_url 2014-09-09-drawing-knots-part4 %}) we will look at SVG gradients and arrows and
+how we can use them to draw complex knots and include movement information.

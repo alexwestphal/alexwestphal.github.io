@@ -6,10 +6,10 @@ tags: knots svg
 ---
 
 
-The basic shapes described in [Drawing Knots (Part 1)]({% post_url 2014-09-06-drawing-knots-part1 %}) can be useful but the true workhorse of SVG is the `path` element.
-In addition to being able to replicate any of the basic shapes, a `path` can achieve a great variety of other shapes
-and patterns. A 'path' is defined using path data in the form of the `d` attribute. Path data consists of a series of
-commands like `M 10 10` or `L 30 50`.
+The basic shapes described in [Drawing Knots (Part 1)]({% post_url 2014-09-06-drawing-knots-part1 %}) can be useful but
+the true workhorse of SVG is the `path` element. In addition to being able to replicate any of the basic shapes, a
+`path` can achieve a great variety of other shapes and patterns. A 'path' is defined using path data in the form of the
+`d` attribute. Path data consists of a series of commands like `M 10 10` or `L 30 50`.
 
 A path command is specified by a letter followed by zero or more coordinates or values (depending on the command). All
 of the commands come in two variants, one specified with a capital letter that uses absolute coordinates and a second
