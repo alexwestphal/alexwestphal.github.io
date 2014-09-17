@@ -13,4 +13,6 @@ accounts.
 Jekyll provides static templates, partials, markdown processing and code highlighting. GitHub provides the free hosting
 and all I have to do to make changes is push to the [git repository](https://github.com/phantomspectre/phantomspectre.github.io).
 
-Find out more by at [jekyllrb.com](http://jekyllrb.com/)
+
+
+[![Jekyll](/images/tech/jekyll.png)](http://jekyllrb.com/)
