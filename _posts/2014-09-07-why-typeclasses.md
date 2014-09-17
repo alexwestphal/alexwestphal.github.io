@@ -55,7 +55,7 @@ at declaration time like inheritance. There are also two other major benefits th
 
 A type constructor is a function that constructs a new type from a old one. For example `List[A]` is a type constructor
 with `A` as its type parameter. It can be applied to a type `Bar` to yield a new type `List[Bar]`. Some type
-constructors can have more than one type parameter, for example `Function1[A,R]` has two type parameters `A` and `R`.
+constructors can have more than one type parameter, e.g. `Function1[A,R]` has two type parameters `A` and `R`.
 
 In Scala a type constructor is declared as a class. For example `List` is declared as:
 
