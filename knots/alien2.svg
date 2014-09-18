@@ -1,0 +1,32 @@
+<!--
+    Alien Method - Step 2
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="200" height="300" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Alien Face -->
+    <path d="M 30 40 Q 30 55, 48 60 Q 45 40, 30 40" fill="#888"/>
+    <path d="M 70 40 Q 70 55, 52 60 Q 55 40, 70 40" fill="#888"/>
+    <path d="M 45 68 Q 50 65, 55 68" stroke="#888" fill="#BBB"/>
+
+    <!-- Wrap Behind / Running End -->
+    <path d="M 35 110 C 35 130, 60 130, 80 130" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 35 110 C 35 130, 60 130, 80 130" stroke="#D44" stroke-width="8" fill="transparent"/>
+
+    <!-- Standing End / Left Head -->
+    <path d="M 60 150 V 120 C 60 90, 20 60, 20 40 Q 20 20, 50 20 Q 80 20, 80 40" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 60 150 V 120 C 60 90, 20 60, 20 40 Q 20 20, 50 20 Q 80 20, 80 40" stroke="#AAA" stroke-width="8" fill="transparent"/>
+
+    <!-- Right Head -->
+    <path d="M 80 40 C 80 60, 35 90, 35 110" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 80 40 C 80 60, 35 90, 35 110" stroke="#AAA" stroke-width="8" fill="transparent"/>
+
+    <!-- Running End Cap -->
+    <path d="M 80 126 v 8" stroke="black" stroke-width="1" fill="transparent"/>
+
+    <!-- Running End Marks -->
+    <path d="M 78 126 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 76 126 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 74 126 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+
+</svg>
