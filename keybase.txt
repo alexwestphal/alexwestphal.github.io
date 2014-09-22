@@ -1,0 +1,82 @@
+==================================================================
+https://keybase.io/spectre
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://phantomspectre.github.io
+  * I am spectre (https://keybase.io/spectre) on keybase.
+  * I have a public key with fingerprint 6CED BA5C 09A9 EF51 A0D4  C0A4 1787 BAD8 0926 9A1C
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.0"
+        },
+        "key": {
+            "fingerprint": "6cedba5c09a9ef51a0d4c0a41787bad809269a1c",
+            "host": "keybase.io",
+            "key_id": "1787BAD809269A1C",
+            "uid": "581e2a716867f08c2939c1963bfc6900",
+            "username": "spectre"
+        },
+        "merkle_root": {
+            "ctime": 1411417261,
+            "hash": "6d18f207b341adfe244ea86516d07ac7ad46e049fe99974ef04499a7956d55edf0e97d6e8fe6fe4d3d4e159dbbd4d7988a25033c2e7322aed72af578c06a4b71",
+            "seqno": 54419
+        },
+        "service": {
+            "hostname": "phantomspectre.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411417301,
+    "expire_in": 157680000,
+    "prev": "7b43bcd6db880322f4f73e037346a7b3ce954307a08280f46e0049e209b548f6",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1
+
+owFVkntQFVUcx7nA1Wx42BDxiAyX0lHguu+zy8QohhNXlBFQs1Kv+zgLm3D3cu/y
+BhVCCcXSmRhmGBqMCaJJI+URKuI0IPESRKIkQioaBB3AMSiT1HaRpjyzf5yz53O+
+5/f9/s4JdxcnZ4NP4YUby1aVBRi6J3mn7YEFg9kIr4iZSFg2IiTJ0KrqMyuXDJEw
+ZD/M5DkHNMlKoFURoeldR+AiE4KkQbtDVqwahZqACUVyQ3RcPyzJ1gRot9llXQuh
+BSjyHCWgLMdCicI4VCQFlCMxwACeExmUxWmWwwRNMlFxqE/diixoWmRR+6vzGyMi
+n/AR2OvaXurCBsVgEOcARjM0kFBGwFmCFTCWJnhJoFkU1UEHtC9actigoNqhXm4y
+tO9Pgha7oix4FlRZJzAS0z6A05hWEOdI1C2IGCPhKOAJEuNECeIkCTmGpjBaRAEn
+AE4kaYiSrARZlgUklFCSZFkOsBQtUhQUJRSyQKQhI0FagqRIiCTEKFbkeZEUAcsw
+HE6hBCHgEBA4zkER4JxEAUZAaY7kAaY5cMAUq4KEUSSJsbn60p4mC1AvWw9t0Zst
+kbOqSvKiRVOCrCam8k9itNkVVRGUJI1KVFWbI0wPoEnNtOnn0iFvWVS08LJV1Pr3
+/wZjGvp0OASqhQMzbLIdWmSdoADNoNrQL4JpmiTgSYIXRFrkGQbVTEmkBAiIEoAg
+aU4LUoAsRRJaeiiDM6ik56cFCHGU5SmSkej/LBMhiMol6J2TE6ycmqr3rsg5wNXJ
+4Oy0xOisv2CnZ5ct//dZb1rp+TjmxVxX/4cN2NDKS5M/3S3q8GmfuWb19lZr30lz
+yVuad67Dtw98UfCGZ2dDf/RAxrYTNX4jr/lnV4e2rj29O29ruVQ4tNoR1frAfy44
+3MV1b8y5iLk70qk83PfrTuxo4ze481incfWW99oO764bNzl/5Xem5INjxcd2lkx9
+O3hxak/5WflCXLSl161WUL1vzb3Qm5t/8FC8e3TF3KWz+b0jbjcaPcw9nR97ZR4Y
+vfvcQP35j4Ymmp4xzLx5OhTQv/WMtHvW1nSpxYaa6n3TpYW/hgdtWXLx1dHmH9p6
+ys07ZlJiI6qL//y86u2a+qDYrUeTllYNF3zabt41nxU5dCX5Cr8C2l4JDz4cd7K+
+8feU9UFrpDU3bweQ861NlZ88NBxY/xJlHJsA6snWfGRzYM6u7xJzVnS3eFyW6x64
+he9DiPHQTOT57n6zU2zLW7cfedcoG9ipx2Ue1iFlNivPLyqovIoz37u/tvhq6bVg
+ub0n8G9KvjrckDf1fVYxKPJts113Wz6dQ3S0fOjVZ7l/cF7NyDT/UukzSxsNxsur
+onasE9KnmzdWFo5MDc7Gxv0opR6Pf3nT6CMy6fiGyevGunVRFfjEoVM3fx7z8O+6
+U7J52LVz5K+9Zxra4MCX5lJqSLk3Hhke/9kffsZm+cj2sorZ88PpYzFexph+dyX5
+/ZLmPuJWQ7d12849Xf8A
+=aXem
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/spectre
+
+==================================================================
