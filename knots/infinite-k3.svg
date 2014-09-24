@@ -1,0 +1,50 @@
+<!--
+    Knot: k3
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="200" height="160" viewBox="0 0 100 80" xmlns="http://www.w3.org/2000/svg">
+
+    <defs>
+        <marker id='head' orient='auto' markerWidth='2' markerHeight='4'
+                refX='0.1' refY='2'>
+          <path d='M0,0 V4 L2,2 Z' fill='black' />
+        </marker>
+    </defs>
+
+    <!-- Direction Arrow (Under) -->
+    <path d="M 70 60 H 50" stroke="black" stroke-width="1" fill="transparent"/>
+
+    <!-- Left Leg -->
+    <path d="M 0 10 H 30 C 50 10, 60 10, 60 20" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 0 10 H 30 C 50 10, 60 10, 60 20" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Right Leg -->
+    <path d="M 70 10 C 50 10, 40 10, 40 20" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 70 10 C 50 10, 40 10, 40 20" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Twist Section 1 -->
+    <path d="M 40 20 C 40 30, 60 30, 60 40" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 40 20 C 40 30, 60 30, 60 40" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Twist Section 2 -->
+    <path d="M 60 20 C 60 30, 40 30, 40 40 C 40 50, 60 50, 60 60" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 60 20 C 60 30, 40 30, 40 40 C 40 50, 60 50, 60 60" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Twist Section 3 -->
+    <path d="M 60 40 C 60 50, 40 50, 40 60" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 60 40 C 60 50, 40 50, 40 60" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Cap Arc -->
+    <path d="M 40 60 A 10 10, 180,0,0, 60 60" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 40 60 A 10 10, 180,0,0, 60 60" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Running End -->
+    <path d="M 70 10 A 15 15, 90,0,1, 85 25 V 45 A 15 15, 90,0,1, 70 60" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 70 10 A 15 15, 90,0,1, 85 25 V 45 A 15 15, 90,0,1, 70 60" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Running End Cap -->
+    <path d="M 70 58 v 4" stroke="black" stroke-width="1" fill="transparent"/>
+
+    <!-- Direction Arrow (Over) -->
+    <path d="M 50 60 H 20" stroke="black" stroke-width="1" fill="transparent" marker-end="url(#head)"/>
+</svg>
