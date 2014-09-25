@@ -70,8 +70,8 @@ itself (shown below) or a round turn and two half hitches around the ring/anchor
 
 ![Truckers Hitch Finish](/knots/truckers-hitch-finish.svg)
 
-While finishing is an integral part of tensioning a line, the Trucker&rsquo;s hitch shouldn't be drawn in drawings, so
-as to avoid making the knot look overly complicated.
+While finishing is an integral part of tensioning a line, the half hitchs shouldn't be included in drawings, so as to
+avoid making the knot look overly complicated.
 
 ## Alternate Use
 
