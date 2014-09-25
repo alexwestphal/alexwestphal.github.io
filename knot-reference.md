@@ -7,18 +7,26 @@ If your interested in how these knots are drawn, check out the Drawing Knot Seri
 [Part 2]({% post_url 2014-09-07-drawing-knots-part2 %}), [Part 3]({% post_url 2014-09-08-drawing-knots-part3 %}),
 [Part 4]({% post_url 2014-09-09-drawing-knots-part4 %})).
 
-- **Alpine Butterfly Bend** -
+- **Alpine Butterfly** -
 
-- **Alpine Butterfly Loop** - A loop knot useful for creating a loop in the middle of a rope. Preferred over the
-Sheepshank for isolating a damaged section of rope.
+    - **Bend** -
 
-- **Alpine Butterfly Loop (Double)** -
+    - **Loop** - A loop knot useful for creating a loop in the middle of a rope. Preferred over the
+    Sheepshank for isolating a damaged section of rope.
+
+    - **Loop (Double)** -
 
 - **Anchor Bend** - ![Anchor Bend Diagram](/knots/anchor-bend.svg)
 
-- **Bowline Loop** - ![Bowline Loop Diagram](/knots/bowline-loop.svg)
+- **Artillery Loop** -
 
-- **Bowline Loop on the Bight** -
+- **Bowline Loop** -
+
+    - **Basic** - ![Bowline Loop Diagram](/knots/bowline-loop.svg)
+
+    - **On the Bight** -
+
+    - **Spanish** -
 
 - **Buntline Hitch** -
 
@@ -28,25 +36,29 @@ Sheepshank for isolating a damaged section of rope.
 
 - **Chair Knot** -
 
-- **Figure Eight** - ![Figure Eight Knot Diagram](/knots/figure-eight-knot.svg)
+- **Figure Eight** -
 
-- **Figure Eight Bend** (Flemish Bend, Joining Eight) -
+    - **Knot** - ![Figure Eight Knot Diagram](/knots/figure-eight-knot.svg)
 
-- **Figure Eight Loop** -
+    - **Bend** (Flemish Bend, Joining Eight) - ![Figure Eight Bend Diagram](/knots/figure-eight-bend.svg)
 
-- **Figure Eight Loop (Directional)** -
+    - **Loop** -
 
-- **Figure Eight Loop (Double)** (Industrial Eight) -
+    - **Loop (Inline)** - ![Figure Eight Loop (Inline) Diagram](/knots/figure-eight-loop-inline.svg)
 
-- **Figure Eight Loop (Re-threaded)** -
+    - **Loop (Double)** (Industrial Eight) -
 
-- **Figure Eight Loop (Triple)** -
+    - **Loop (Re-threaded)** -
+
+    - **Loop (Triple)** -
 
 - **Fisherman's Bend** -
 
-- **Fisherman's Bend (Double)** -
+    - **Basic** -
 
-- **Fisherman's Bend (Triple)** -
+    - **Double** -
+
+    - **Triple** -
 
 - **Girth Hitch** - A hitch useful for tying a bight around a ring or post
 ![Girth Hitch Diagram](/knots/girth-hitch.svg)
@@ -73,8 +85,8 @@ bight ![Larks Head Hitch Diagram](/knots/larks-head-hitch.svg)
 
 - **Prussik Knot** - ![Prussik Knot Diagram](/knots/prussik-knot.svg)
 
-- **Reef Knot** (Square Knot) - A binding knot used for reefing sails and fastening bandages.
-![Reef Knot Diagram](/knots/reef-knot.svg) [In Depth Article]({% post_url 2014-09-04-reef-knot%})
+- **Reef Knot** (Square Knot) - A binding knot used for reefing sails and fastening bandages. [In Depth Article]({% post_url 2014-09-04-reef-knot%})
+![Reef Knot Diagram](/knots/reef-knot.svg)
 
 - **Rolling Hitch** -
 
@@ -84,15 +96,19 @@ bight ![Larks Head Hitch Diagram](/knots/larks-head-hitch.svg)
 
 - **Sheet Bend** - ![Sheet Bend Diagram](/knots/sheet-bend.svg)
 
-- **Spanish Bowline** -
-
 - **Stevedore Knot** -
 
 - **Super Munter Hitch** - ![Super Munter Hitch Digram](/knots/super-munter-hitch.svg)
 
 - **Thief Knot** - A variant of the Reef knot ![Thief Knot Diagram](/knots/thief-knot.svg)
 
-- **Truckers Hitch** -
+- **Trucker&rsquo;s Hitch** - [In Depth Article]({% post_url 2014-09-25-truckers-hitch%})
+
+    - **Inline Eight Loop** - ![Truckers Hitch (Inline Figure Eight Loop) Diagram](/knots/truckers-hitch-inline-eight.svg)
+
+    - **Sheepshank Loop** (Bell Ringer&rsquo;s knot) - ![Truckers Hitch (Sheepshank Loop) Diagram](/knots/truckers-hitch-sheep-shank.svg)
+
+    - **Slipped Overhand Loop** - ![Truckers Hitch (Slipped Overhand Loop) Diagram](/knots/truckers-hitch-slipped-overhand.svg)
 
 - **Water Knot** (Tape Knot) - ![Water Knot Digram](/knots/water-knot.svg)
 

@@ -1,64 +1,53 @@
 <!--
-    Reef Knot Diagram
+    Figure Eight Bend Diagram
     Copyright © 2014, Alex Westphal. All rights reserved
 -->
 <svg version="1.1" baseProfile="full" width="400" height="200" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
 
     <!-- Red Rope - Running End Curve -->
-    <path d="M 50 65 C 20 65, 20 10, 50 10" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 50 65 C 20 65, 20 10, 50 10" stroke="#D44" stroke-width="8" fill="transparent"/>
+    <path d="M 70 17.5 A 20 20, 180,0,0, 70 57.5" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 70 17.5 A 20 20, 180,0,0, 70 57.5" stroke="#D44" stroke-width="4" fill="transparent"/>
 
     <!-- Blue Rope - Standing End Curve -->
-    <path d="M 50 55 C 35 55, 35 20, 50 20" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 50 55 C 35 55, 35 20, 50 20" stroke="#22D" stroke-width="8" fill="transparent"/>
+    <path d="M 70 50 A 12.5 12.5, 180,0,1, 70 25" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 70 50 A 12.5 12.5, 180,0,1, 70 25" stroke="#22D" stroke-width="4" fill="transparent"/>
 
     <!-- Red Rope - Standing End -->
-    <path d="M 0 45 H 140" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 0 45 H 140" stroke="#D44" stroke-width="8" fill="transparent"/>
-
-    <!-- Blue Rope Running End -->
-    <path d="M 10 35 H 140" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 10 35 H 140" stroke="#22D" stroke-width="8" fill="transparent"/>
-
-    <!-- Red Rope - Middle Section -->
-    <path d="M 50 10 C 100 10, 110 80, 140 80" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 50 10 C 100 10, 110 80, 140 80" stroke="#D44" stroke-width="8" fill="transparent"/>
-
-    <!-- Blue Rope - Middle Section -->
-    <path d="M 50 20 C 95 20, 100 90, 140 90" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 50 20 C 95 20, 100 90, 140 90" stroke="#22D" stroke-width="8" fill="transparent"/>
-
-    <!-- Red Rope - Running End -->
-    <path d="M 50 65 H 190" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 50 65 H 190" stroke="#D44" stroke-width="8" fill="transparent"/>
+    <path d="M 0 40 H 130" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 0 40 H 130" stroke="#D44" stroke-width="4" fill="transparent"/>
 
     <!-- Blue Rope - Standing End -->
-    <path d="M 50 55 H 200" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 50 55 H 200" stroke="#22D" stroke-width="8" fill="transparent"/>
+    <path d="M 130 32.5 H 20" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 130 32.5 H 20" stroke="#22D" stroke-width="4" fill="transparent"/>
+
+    <!-- Red Rope - Middle Section -->
+    <path d="M 130 65 C 110 65, 95 17.5, 70 17.5" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 130 65 C 110 65, 95 17.5, 70 17.5" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Blue Rope - Middle Section -->
+    <path d="M 70 25 C 90 25, 105 72.5, 130 72.5" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 70 25 C 90 25, 105 72.5, 130 72.5" stroke="#22D" stroke-width="4" fill="transparent"/>
+
+    <!-- Red Rope - Running End -->
+    <path d="M 70 57.5 H 180" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 70 57.5 H 180" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Blue Rope - Running End End -->
+    <path d="M 200 50 H 70" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 200 50 H 70" stroke="#22D" stroke-width="4" fill="transparent"/>
 
     <!-- Red Rope - Standing End Curve -->
-    <path d="M 140 45 C 170 45, 170 80, 140 80" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 140 45 C 170 45, 170 80, 140 80" stroke="#D44" stroke-width="8" fill="transparent"/>
+    <path d="M 130 40 A 12.5 12.5, 180,0,1, 130 65" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 130 40 A 12.5 12.5, 180,0,1, 130 65" stroke="#D44" stroke-width="4" fill="transparent"/>
 
     <!-- Blue Rope - Running End Curve -->
-    <path d="M 140 35 C 185 35, 185 90, 140 90" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 140 35 C 185 35, 185 90, 140 90" stroke="#22D" stroke-width="8" fill="transparent"/>
+    <path d="M 130 72.5 A 20 20, 180,0,0, 130 32.5" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 130 72.5 A 20 20, 180,0,0, 130 32.5" stroke="#22D" stroke-width="4" fill="transparent"/>
 
-    <!-- Red Rope - Running End Cap -->
-    <path d="M 190 61 v 8" stroke="black" stroke-width="1" fill="transparent"/>
+    <!-- Red Rope - Running End Markings -->
+    <path d="M 180 55.5 v 4 m -2 -4 v 4 m -2 -4 v 4 m -2 -4 v 4" stroke="black" stroke-width="1" fill="transparent"/>
 
-    <!-- Blue Rope - Running End Cap -->
-    <path d="M 10 31 v 8" stroke="black" stroke-width="1" fill="transparent"/>
-
-    <!-- Red Rope - Running End Marks -->
-    <path d="M 188 61 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 186 61 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 184 61 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-
-    <!-- Blue Rope - Running End Marks -->
-    <path d="M 12 31 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 14 31 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 16 31 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-
+    <!-- Red Rope - Running End Markings -->
+    <path d="M 20 30.5 v 4 m 2 -4 v 4 m 2 -4 v 4 m 2 -4 v 4" stroke="black" stroke-width="1" fill="transparent"/>
 
 </svg>
