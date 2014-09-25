@@ -1,0 +1,60 @@
+<!--
+    Truckers Hitch (Sheep Shank Variant)
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="200" height="400" viewBox="0 0 100 200" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Standing End - Section 2 -->
+    <path d="M 15 30 A 10 10, 90,0,1, 20 20 H 30" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 15 30 A 10 10, 90,0,1, 20 20 H 30" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Wrap - Section 2 -->
+    <path d="M 45 70 A 10 10, 90,0,0, 35 60 H 25" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 45 70 A 10 10, 90,0,0, 35 60 H 25" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- S Bend - Section 2 -->
+    <path d="M 30 120 V 25 " stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 30 120 V 25 " stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- S Bend - Section 4 -->
+    <path d="M 20 25 V 70" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 20 25 V 70" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Standing End - Section 1 -->
+    <path d="M 35 0 V 30 A 10 10, 180,0,1, 15 30" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 35 0 V 30 A 10 10, 180,0,1, 15 30" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Standing End - Section 3 -->
+    <path d="M 30 20 A 10 10, 90,0,1, 40 30" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 30 20 A 10 10, 90,0,1, 40 30" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- S Bend - Section 3 -->
+    <path d="M 30 25 V 10 A 5,5 180,0,0, 15 10 C 15 20, 20 15, 20 25" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 30 25 V 10 A 5,5 180,0,0, 15 10 C 15 20, 20 15, 20 25" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Wrap - Section 3 -->
+    <path d="M 25 60 C 20 60, 10 60, 10 80 C 10, 100, 20 170, 20 185" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 25 60 C 20 60, 10 60, 10 80 C 10, 100, 20 170, 20 185" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Anchor/Ring -->
+    <path d="M 0 200 A 20 20, 180,0,1, 40 200" stroke="#666" stroke-width="5" fill="transparent"/>
+
+    <!-- Wrap Over Anchor/Ring -->
+    <path d="M 20 185 C 20 205, 30 125, 40 125" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 20 185 C 20 205, 30 125, 40 125" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- S Bend - Section 1 -->
+    <path d="M 40 30 V 80 C 40 100, 50 100, 50 120 A 10 10, 180,0,1, 30 120" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 40 30 V 80 C 40 100, 50 100, 50 120 A 10 10, 180,0,1, 30 120" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Wrap - Section 1 -->
+    <path d="M 20 70 A 10 10, 90,0,0, 45 70" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 20 70 A 10 10, 90,0,0, 45 70" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Running End -->
+    <path d="M 40 125 C 50 125, 60 160, 60 180" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 40 125 C 50 125, 60 160, 60 180" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Running End Markings -->
+    <path d="M 58 180 h 4 m -4 -2 h 4 m -4 -2 h 4 m -4 -2 h 4" stroke="black" stroke-width="1" fill="transparent"/>
+</svg>

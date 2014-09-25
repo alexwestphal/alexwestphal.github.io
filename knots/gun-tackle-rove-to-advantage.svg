@@ -1,10 +1,15 @@
 <!--
-    3:1 Tension System
+    Gun Tackle (Rove to Advantage)
     Copyright © 2014, Alex Westphal. All rights reserved
 -->
 <svg version="1.1" baseProfile="full" width="200" height="300" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
 
-
+    <defs>
+        <marker id='head' orient='auto' markerWidth='2' markerHeight='4'
+                refX='0.1' refY='2'>
+          <path d='M0,0 V4 L2,2 Z' fill='black' />
+        </marker>
+    </defs>
 
     <!-- Top Pulley -->
     <circle cx="50" cy="50" r="20" fill="#AAA"/>
@@ -13,23 +18,23 @@
     <circle cx="50" cy="75" r="4" stroke="#666" stroke-width="2" fill="transparent"/>
 
     <!-- Bottom Pulley -->
-    <circle cx="50" cy="120" r="20" fill="#AAA"/>
-    <circle cx="50" cy="120" r="15" fill="#888"/>
+    <circle cx="40" cy="120" r="20" fill="#AAA"/>
+    <circle cx="40" cy="120" r="15" fill="#888"/>
 
     <!-- Standing End -->
     <path d="M 50 0 V 23.5" stroke="black" stroke-width="2" stroke-linecap="round" fill="transparent"/>
 
     <!-- Tension Rope -->
-    <path d="M 50 76.5 C 50 75, 67.5 110, 67.5 120 A 17.5 17.5, 0, 0, 1, 32.5 120 V 50 A 17.5 17.5, 0, 0, 1, 50 32.5 C 75 32.5, 80 80, 90 120" stroke="black" stroke-width="2" stroke-linecap="round" fill="transparent"/>
+    <path d="M 50 76.5 C 50 75, 57.5 110, 57.5 120 A 17.5 17.5, 180, 0, 1, 22.5 120 L 32.5, 50 A 17.5 17.5, 180, 0, 1, 67.5 50 V 100" stroke="black" stroke-width="2" stroke-linecap="round" marker-end="url(#head)" fill="transparent"/>
 
     <!-- Top Pulley Cover -->
     <circle cx="50" cy="50" r="20" fill="#AAA" opacity="0.75"/>
     <rect x="45" y="25" width="10" height="50" fill="#666"/>
 
     <!-- Bottom Pulley Cover -->
-    <circle cx="50" cy="120" r="20" fill="#AAA" opacity="0.75"/>
-    <path d="M 45 150 V 120 A 5 5, 0, 0, 1, 55 120 V 150" fill="#666"/>
+    <circle cx="40" cy="120" r="20" fill="#AAA" opacity="0.75"/>
+    <path d="M 35 150 V 120 A 5 5, 0, 0, 1, 45 120 V 150" fill="#666"/>
 
     <!-- Anchor -->
-    <rect x="10" y="145" width="80" height="5" fill="#666"/>
+    <rect x="0" y="145" width="80" height="5" fill="#666"/>
 </svg>

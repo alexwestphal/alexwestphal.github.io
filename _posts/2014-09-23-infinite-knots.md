@@ -6,7 +6,7 @@ tags: knots
 ---
 
 Sometimes I hear people claim "I can tie every knot". In general I can disabuse them of this notion by demonstrating a
-knot that they don't know (I know approximately 50, most of which are listed on the [knot reference page](/knot-reference)).
+knot that they don't know (I know 60+, most of which are listed on the [knot reference page](/knot-reference)).
 
 If the claim was from someone that knew more knots than I do (uncommon but easily possible), we can turn to
 [The Ashley Book of Knots](http://en.wikipedia.org/wiki/The_Ashley_Book_of_Knots). It is highly improbable that even

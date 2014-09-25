@@ -1,0 +1,39 @@
+<!--
+    Gun Tackle
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="200" height="300" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <marker id='head' orient='auto' markerWidth='2' markerHeight='4'
+                refX='0.1' refY='2'>
+          <path d='M0,0 V4 L2,2 Z' fill='black' />
+        </marker>
+    </defs>
+
+    <!-- Anchor -->
+    <rect x="0" y="0" width="80" height="5" fill="#666"/>
+
+    <!-- Top Pulley -->
+    <circle cx="50" cy="30" r="20" fill="#AAA"/>
+    <circle cx="50" cy="30" r="15" fill="#888"/>
+    <circle cx="50" cy="55" r="4" stroke="#666" stroke-width="2" fill="transparent"/>
+
+    <!-- Bottom Pulley -->
+    <circle cx="40" cy="100" r="20" fill="#AAA"/>
+    <circle cx="40" cy="100" r="15" fill="#888"/>
+
+    <!-- Tension Rope -->
+    <path d="M 50 56.5 C 50 55, 57.5 90, 57.5 100 A 17.5 17.5, 180, 0, 1, 22.5 100 L 32.5, 30 A 17.5 17.5, 180, 0, 1, 67.5 30 V 70" stroke="black" stroke-width="2" stroke-linecap="round" marker-end="url(#head)" fill="transparent"/>
+
+    <!-- Top Pulley Cover -->
+    <circle cx="50" cy="30" r="20" fill="#AAA" opacity="0.75"/>
+    <rect x="45" y="5" width="10" height="50" fill="#666"/>
+
+    <!-- Bottom Pulley Cover -->
+    <circle cx="40" cy="100" r="20" fill="#AAA" opacity="0.75"/>
+    <path d="M 35 130 V 100 A 5 5, 0, 0, 1, 45 100 V 130" fill="#666"/>
+
+    <path d="M 40 130 V 140 A 4 4, 180,0,0, 48 140" stroke="#666" stroke-width="2" fill="transparent"/>
+
+
+</svg>

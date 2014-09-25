@@ -1,0 +1,41 @@
+<!--
+    Truckers Hitch (Slipped Overhand Variant)
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="200" height="300" viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Section 3 -->
+    <path d="M 20 40 V 135" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 20 40 V 135" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Anchor/Ring -->
+    <path d="M 0 150 A 20 20, 180,0,1, 40 150" stroke="#666" stroke-width="5" fill="transparent"/>
+
+    <!-- Section 4 -->
+    <path d="M 20 135 C 20 155, 30 55, 50 55" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 20 135 C 20 155, 30 55, 50 55" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Section 2 -->
+    <path d="M 35 15 C 35 5, 20 5, 20 15" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 35 15 C 35 5, 20 5, 20 15" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Standing End -->
+    <path d="M 27.5 0 V 35" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 27.5 0 V 35" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Loop -->
+    <path d="M 20 15 C 20 25, 60 25, 60 50 A 10 10, 180,0,1, 40 50 C 40 25, 20 25, 20 40" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 20 15 C 20 25, 60 25, 60 50 A 10 10, 180,0,1, 40 50 C 40 25, 20 25, 20 40" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Section 1 -->
+    <path d="M 27.5 35 C 27.5 45, 35 40, 35 15" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 27.5 35 C 27.5 45, 35 40, 35 15" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Running End -->
+    <path d="M 50 55 C 60 55, 70 110, 70 130" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 50 55 C 60 55, 70 110, 70 130" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- Running End Markings -->
+    <path d="M 68 130 h 4 m -4 -2 h 4 m -4 -2 h 4 m -4 -2 h 4" stroke="black" stroke-width="1" fill="transparent"/>
+
+</svg>
