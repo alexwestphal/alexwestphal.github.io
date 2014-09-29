@@ -15,23 +15,17 @@
     <rect x="120" y="0" width="20" height="100" stroke="black" stroke-width="0.25" fill="url(#PipeGradient)"/>
 
     <!-- Loop Across Pipe -->
-    <path d="M 140 40 C 160 40, 160 20, 130 20 C 90 20, 90 80, 130 80 C 160 80, 160 60, 140 60" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 140 40 C 160 40, 160 20, 130 20 C 90 20, 90 80, 130 80 C 160 80, 160 60, 140 60" stroke="#D44" stroke-width="8" fill="transparent"/>
+    <path d="M 140 40 C 160 40, 160 20, 130 20 C 90 20, 90 80, 130 80 C 160 80, 160 60, 140 60" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 140 40 C 160 40, 160 20, 130 20 C 90 20, 90 80, 130 80 C 160 80, 160 60, 140 60" stroke="#D44" stroke-width="4" fill="transparent"/>
 
     <!-- Running End -->
-    <path d="M 120 40 H 40" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 120 40 H 40" stroke="#D44" stroke-width="8" fill="transparent"/>
+    <path d="M 120 40 H 40" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 120 40 H 40" stroke="#D44" stroke-width="4" fill="transparent"/>
 
     <!-- Standing End -->
-    <path d="M 120 60 H 00" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 120 60 H 00" stroke="#D44" stroke-width="8" fill="transparent"/>
+    <path d="M 120 60 H 00" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 120 60 H 00" stroke="#D44" stroke-width="4" fill="transparent"/>
 
     <!-- Running End Cap -->
-    <path d="M 40 36 v 8" stroke="black" stroke-width="1" fill="transparent"/>
-
-    <!-- Running End Marks -->
-    <path d="M 42 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 44 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 46 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-
+    <path d="M 40 38 v 4 m 2 -4 v 4 m 2 -4 v4 m 2 -4 v 4" stroke="black" stroke-width="1" stroke-opacity="0.8" fill="transparent"/>
 </svg>
