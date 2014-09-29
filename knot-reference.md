@@ -69,7 +69,7 @@ If your interested in how these knots are drawn, check out the Drawing Knot Seri
 
 - **Handcuff Knot** -
 
-- **Highwayman's Hitch** -
+- **Highwayman&rsquo;s Hitch** -
 
 - **Kamikaze Knot** - Variation of the Sheepshank knot. Typically create by tying a Sheepshank and cutting the middle
  section. ![Kamikazi Knot Diagram](/knots/kamikaze-knot.svg)
@@ -99,6 +99,8 @@ bight ![Larks Head Hitch Diagram](/knots/larks-head-hitch.svg)
 - **Stevedore Knot** -
 
 - **Super Munter Hitch** - ![Super Munter Hitch Digram](/knots/super-munter-hitch.svg)
+
+- **Surgeon&rsquo;s Knot**
 
 - **Thief Knot** - A variant of the Reef knot ![Thief Knot Diagram](/knots/thief-knot.svg)
 

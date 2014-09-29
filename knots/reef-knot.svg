@@ -28,19 +28,9 @@
     <path d="M 120 20 C 150 20, 150 80, 120 80" stroke="black" stroke-width="9" fill="transparent"/>
     <path d="M 120 20 C 150 20, 150 80, 120 80" stroke="#D44" stroke-width="8" fill="transparent"/>
 
-    <!-- Red Rope - Running End Cap -->
-    <path d="M 30 36 v 8" stroke="black" stroke-width="1" fill="transparent"/>
-
-    <!-- Blue Rope - Running End Cap -->
-    <path d="M 170 36 v 8" stroke="black" stroke-width="1" fill="transparent"/>
-
     <!-- Red Rope - Running End Marks -->
-    <path d="M 32 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 34 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 36 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 30 36 v 8 m 2 -8 v 8 m 2 -8 v 8 m 2 -8 v 8" stroke="black" stroke-width="1" stroke-opacity="0.8" fill="transparent"/>
 
     <!-- Blue Rope - Running End Marks -->
-    <path d="M 168 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 166 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 164 36 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 170 36 v 8 m -2 -8 v 8 m -2 -8 v 8 m -2 -8 v 8" stroke="black" stroke-width="1" stroke-opacity="0.8" fill="transparent"/>
 </svg>

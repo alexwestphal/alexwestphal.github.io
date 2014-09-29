@@ -15,23 +15,18 @@
     <rect x="0" y="40" width="200" height="20" stroke="black" stroke-width="0.25" fill="url(#PipeGradient)"/>
 
     <!-- Standing End -->
-    <path d="M 105 100 V 50 C 105 30, 122 30, 122 40" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 105 100 V 50 C 105 30, 122 30, 122 40" stroke="#D44" stroke-width="8" fill="transparent"/>
+    <path d="M 105 100 V 50 C 105 30, 115 30, 115 40" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 105 100 V 50 C 105 30, 115 30, 115 40" stroke="#D44" stroke-width="4" fill="transparent"/>
 
     <!-- Running End -->
-    <path d="M 95 20 V 50 C 95 70, 78 70, 78 60" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 95 20 V 50 C 95 70, 78 70, 78 60" stroke="#D44" stroke-width="8" fill="transparent"/>
+    <path d="M 95 20 V 50 C 95 70, 85 70, 85 60" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 95 20 V 50 C 95 70, 85 70, 85 60" stroke="#D44" stroke-width="4" fill="transparent"/>
 
     <!-- Cross Section -->
-    <path d="M 78 40 C 78 15, 122 85, 122 60" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 78 40 C 78 15, 122 85, 122 60" stroke="#D44" stroke-width="8" fill="transparent"/>
+    <path d="M 85 40 C 85 15, 115 85, 115 60" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 85 40 C 85 15, 115 85, 115 60" stroke="#D44" stroke-width="4" fill="transparent"/>
 
     <!-- Running End Cap -->
-    <path d="M 91 20 h 8" stroke="black" stroke-width="1" fill="transparent"/>
+    <path d="M 93 20 h 4" stroke="black" stroke-width="1" fill="transparent"/>
 
-
-    <!-- Running End Marks -->
-    <path d="M 91 22 h 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 91 24 h 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 91 26 h 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
 </svg>
