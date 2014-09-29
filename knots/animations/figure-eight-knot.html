@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="/js/raphael-min.js"></script>
+</head>
+<body>
+    <script>
+        function drawGrid(paper) {
+            paper.rect(0,0, 400, 200).attr("fill", "#FFF").attr("stroke", "#888");
+            for(var x=10; x<400; x += 10 ) paper.path("M"+x+" 0 V 200").attr("stroke", "#888");
+            for(var y=10; y<200; y += 10 ) paper.path("M0 "+y+" H 400").attr("stroke", "#888");
+        }
+
+        function drawKnot(paper) {
+            paper.path("M0 80H 220")
+        }
+
+        var paper = Raphael(0, 0, 400 ,200);
+        drawGrid(paper);
+        drawKnot(paper);
+
+
+    </script>
+</body>
+</html>
