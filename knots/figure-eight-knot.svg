@@ -5,8 +5,8 @@
 <svg version="1.1" baseProfile="full" width="400" height="200" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
 
     <!-- Running End Curve -->
-    <path d="M 70 60 C 40 60, 40 25, 70 25" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 70 60 C 40 60, 40 25, 70 25" stroke="#D44" stroke-width="8" fill="transparent"/>
+    <path d="M 70 60 A 17.5 17.5, 180,0,1, 70 25" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 70 60 A 17.5 17.5, 180,0,1, 70 25" stroke="#D44" stroke-width="8" fill="transparent"/>
 
     <!-- Standing End -->
     <path d="M 0 40 H 110" stroke="black" stroke-width="9" fill="transparent"/>
@@ -21,14 +21,11 @@
     <path d="M 70 60 H 180" stroke="#D44" stroke-width="8" fill="transparent"/>
 
     <!-- Standing End Curve -->
-    <path d="M 110 40 C 140 40, 140 75, 110 75" stroke="black" stroke-width="9" fill="transparent"/>
-    <path d="M 110 40 C 140 40, 140 75, 110 75" stroke="#D44" stroke-width="8" fill="transparent"/>
-
-    <!-- Running End Cap -->
-    <path d="M 180 56 v 8" stroke="black" stroke-width="1" fill="transparent"/>
+    <path d="M 110 40 A 17.5 17.5, 180,0,1, 110 75" stroke="black" stroke-width="9" fill="transparent"/>
+    <path d="M 110 40 A 17.5 17.5, 180,0,1, 110 75" stroke="#D44" stroke-width="8" fill="transparent"/>
 
     <!-- Running End Marks -->
-    <path d="M 178 56 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 176 56 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
-    <path d="M 174 56 v 8" stroke="black" stroke-width="1" fill="transparent" stroke-opacity="0.8"/>
+    <path d="M 180 56 v 8 m -2 -8 v 8 m -2 -8 v 8 m -2 -8 v 8" stroke="black" stroke-width="1" stroke-opacity="0.8" fill="transparent"/>
+
+
 </svg>
