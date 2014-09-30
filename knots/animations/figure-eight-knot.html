@@ -2,122 +2,29 @@
 <html>
 <head>
     <script src="/js/d3.min.js"></script>
-    <style>
-
-        .grid rect {
-            stroke: #888;
-            fill: transparent;
-        }
-
-        .grid line {
-            stroke-width:0.5;
-            stroke: #BBB;
-            fill: transparent;
-        }
-
-        .rope-shadow {
-            stroke: #BBB;
-            stroke-width: 9;
-            opacity: 0.5;
-            fill: transparent;
-        }
-
-        .rope-back {
-            stroke: black;
-            stroke-width: 9;
-            fill: transparent;
-        }
-        .rope-front {
-            stroke: #D44;
-            stroke-width: 8;
-            fill: transparent;
-        }
-
-    </style>
+    <script src="knots.js"></script>
+    <link rel="stylesheet" href="knots.css"/>
 </head>
 <body>
 <svg class="chart"></svg>
 <script>
+
     var width = 400, height = 200;
-    var id = function(d) { return d; };
+    var scale = knots.transform.scale(2);
 
     var paths = [
-        { // Running End Curve
-            s: "M 70 25", e: "A 17.5 17.5, 180,0,0, 70 60", t: 3,
-            f: function(t) {
-                return "A17.5 17.5,"+(t*180)+",0,0,"+(70-Math.sin(Math.PI*t)*17.5)+" "+(42.5 -Math.cos(Math.PI*t)*17.5);
-            }
-        },
-        { // Standing End
-            s: "M 0 40", e: "H 110", t: 0,
-            f: function(t) { return "H" + (t*110); }
-        },
-        { // Middle Section
-            s: "M 110 75", e: "C 80 75, 100 25, 70 25", t: 2,
-            f: function(t) {
-                return "C 80 75,"+(140-t*40)+" "+(75-t*50)+","+(110-t*40)+" "+ (75-t*50);
-            }
-        },
-        { //Running End
-            s: "M 70 60", e: "H 180", t: 4,
-            f: function(t) { return "H" + (70+t*110); }
-        },
-        { // Standing End Curve
-            s: "M 110 40", e:"A 17.5 17.5, 180,0,1, 110 75", t: 1,
-            f: function(t) {
-                return "A17.5 17.5,"+(t*180)+",0,1,"+(110+Math.sin(Math.PI*t)*17.5)+" "+(57.5 -Math.cos(Math.PI*t)*17.5);
-            }
-        }
+        { t: 3, s: "M 70 25",   f: knots.interpolate.ArcA(70, 42.5, 17.5, 180)            }, // Running End Curve
+        { t: 0, s: "M 0 40",    f: knots.interpolate.Horizontal(0, 110)                   }, // Standing End
+        { t: 2, s: "M 110 75",  f: knots.interpolate.Cubic(110,75, 80,75, 100,25, 70,25)  }, // Middle Section
+        { t: 4, s: "M 70 60",   f: knots.interpolate.Horizontal(70,180), e: true          }, // Running End
+        { t: 1, s: "M 110 40",  f: knots.interpolate.ArcC(110, 57.5, 17.5, 180)           }  // Standing End Curve
     ];
 
-    var chart = d3.select(".chart")
-        .attr({width: width, height: height});
+    var chart = knots.drawChart(width, height);
+    //knots.drawGrid(chart, 200, 100).attr("transform", scale);
+    knots.drawKnot(chart, paths).attr("transform",scale);
 
-    //drawGrid(chart, width, height);
-    drawKnot(chart, width, height, paths);
 
-    function drawGrid(chart, width, height) {
-        var grid = chart.append("g")
-            .attr("class", "grid")
-            .attr("transform", function() { return "scale(" + width/200 + "," + height/100 + ")"; });
-
-        grid.append("rect")
-            .attr({width: 200, height: 100});
-
-        grid.append("g").selectAll("line")
-            .data([10,20,30,40,50,60,70,80,90])
-          .enter().append("line")
-            .attr({x1: 0, x2: 200, y1: id, y2: id});
-
-        grid.append("g").selectAll("line")
-            .data([10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190])
-          .enter().append("line")
-            .attr({x1: id, x2: id, y1: 0, y2: 100});
-    }
-
-    function drawKnot(chart, width, height, paths) {
-        var duration = 8000;
-
-        var section = chart.selectAll("g.section")
-            .data(paths)
-          .enter().append("g")
-            .attr("transform", "scale(" + width/200 + "," + height/100 + ")");
-
-        function animate(path) {
-            path.attr("d", function(d) { return d.s; })
-              .transition()
-                .delay(function(d) { return d.t/paths.length*duration; })
-                .duration(duration/paths.length)
-                .ease("linear")
-                .attrTween("d", function(d) { return function(t) { return d.s + d.f(t); }; });
-        }
-
-        section.append("path")
-            .attr("class", "rope-shadow")
-            .attr("d", function(d) { return d.s + d.e; });
-        animate(section.append("path").attr("class", "rope-back"));
-        animate(section.append("path").attr("class", "rope-front"));
-    }
 </script>
 </body>
 </html>

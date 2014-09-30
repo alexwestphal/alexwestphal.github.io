@@ -1,0 +1,34 @@
+.grid rect {
+    stroke: #888;
+    fill: transparent;
+}
+
+.grid line {
+    stroke-width:0.5;
+    stroke: #BBB;
+    fill: transparent;
+}
+
+.rope-shadow {
+    stroke: #BBB;
+    stroke-width: 9;
+    opacity: 0.5;
+    fill: transparent;
+}
+
+.rope-back {
+    stroke: black;
+    stroke-width: 9;
+    fill: transparent;
+}
+.rope-front {
+    stroke: #D44;
+    stroke-width: 8;
+    fill: transparent;
+}
+
+marker#cap {
+    stroke: black;
+    stroke-width: 0.2;
+    fill: transparent;
+}
