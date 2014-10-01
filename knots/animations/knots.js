@@ -50,8 +50,9 @@ var knots = function() {
                 .data(paths)
                 .enter().append("g");
 
-            function animate(path) {
+            function style(path, cls) {
                 path.attr("d", function(d) { return d.s; })
+                    .attr("class", function(d) { return cls + ' ' + d.c; })
                     .transition()
                     .delay(function(d) { return d.t/paths.length*duration; })
                     .duration(duration/paths.length).ease("linear")
@@ -60,11 +61,8 @@ var knots = function() {
                     .attrTween("d", function(d) { return function(t) { return d.s + d.f(t); }; });
             }
 
-//            section.append("path")
-//                .attr("class", "rope-shadow")
-//                .attr("d", function(d) { return d.s + d.f(1); });
-            animate(section.append("path").attr("class", "rope-back"));
-            animate(section.append("path").attr("class", "rope-front"));
+            style(section.append("path"), "rope-back");
+            style(section.append("path"), "rope-front");
 
             return knot;
         },

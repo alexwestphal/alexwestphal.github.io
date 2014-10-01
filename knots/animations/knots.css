@@ -9,13 +9,6 @@
     fill: transparent;
 }
 
-.rope-shadow {
-    stroke: #BBB;
-    stroke-width: 9;
-    opacity: 0.5;
-    fill: transparent;
-}
-
 .rope-back {
     stroke: black;
     stroke-width: 9;
@@ -26,6 +19,9 @@
     stroke-width: 8;
     fill: transparent;
 }
+
+.rope-front.red  { stroke: #D44; }
+.rope-front.blue { stroke: #22D; }
 
 marker#cap {
     stroke: black;

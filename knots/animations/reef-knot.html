@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reef Knot Animation</title>
+    <script src="/js/d3.min.js"></script>
+    <script src="knots.js"></script>
+    <link rel="stylesheet" href="knots.css"/>
+</head>
+<body>
+<svg class="chart"></svg>
+<script>
+
+    var width = 400, height = 200;
+    var scale = knots.transform.scale(2);
+
+    var paths = [
+        { c: "blue", t: 2, s: "M 80 80",   f: knots.interpolate.Cubic(80,80, 50,80, 50,20, 80,20)      },// Bight (Blue)
+
+        { c: "red",  t: 0, s: "M 0 60",    f: knots.interpolate.Horizontal(0, 60)                      },// Standing End (Red)
+        { c: "red",  t: 1, s: "M 60 60",   f: knots.interpolate.Cubic(60,60, 90,60, 90,80, 120,80)     },// Standing End Segment (Red)
+        { c: "red",  t: 3, s: "M 120 20",  f: knots.interpolate.Cubic(120,20, 90,20, 90,40, 60,40)     },// Running End Segment (Red)
+        { c: "red",  t: 4, s: "M 60 40",   f: knots.interpolate.Horizontal(60, 30)                     },// Running End (Red)
+
+        { c: "blue", t: 0, s: "M 200 60",  f: knots.interpolate.Horizontal(200, 140)                   },// Standing End (Blue)
+        { c: "blue", t: 1, s: "M 140 60",  f: knots.interpolate.Cubic(140,60, 110,60, 110,80, 80,80)   },// Standing End Segment (Blue)
+        { c: "blue", t: 3, s: "M 80 20",   f: knots.interpolate.Cubic(80,20, 110,20, 110,40, 140,40)   },// Running End Segment (Blue)
+        { c: "blue", t: 4, s: "M 140 40",  f: knots.interpolate.Horizontal(140, 170)                   },// Running End (Blue)
+
+        { c: "red",  t: 2, s: "M 120 80",  f: knots.interpolate.Cubic(120,80, 150,80, 150,20, 120,20)  } // Bight (Red)
+    ];
+
+    var chart = knots.drawChart(width, height);
+    //knots.drawGrid(chart, 200, 100).attr("transform", scale);
+    knots.drawKnot(chart, paths).attr("transform",scale);
+
+
+</script>
+</body>
+</html>

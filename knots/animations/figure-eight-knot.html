@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Figure Eight Knot Animation</title>
     <script src="/js/d3.min.js"></script>
     <script src="knots.js"></script>
     <link rel="stylesheet" href="knots.css"/>
@@ -13,15 +14,15 @@
     var scale = knots.transform.scale(2);
 
     var paths = [
-        { t: 3, s: "M 70 25",   f: knots.interpolate.ArcA(70, 42.5, 17.5, 180)            }, // Running End Curve
+        { t: 3, s: "M 70 25",   f: knots.interpolate.Cubic(70,25, 40,25, 40,60, 70,60)    }, // Running End Curve
         { t: 0, s: "M 0 40",    f: knots.interpolate.Horizontal(0, 110)                   }, // Standing End
         { t: 2, s: "M 110 75",  f: knots.interpolate.Cubic(110,75, 80,75, 100,25, 70,25)  }, // Middle Section
         { t: 4, s: "M 70 60",   f: knots.interpolate.Horizontal(70,180), e: true          }, // Running End
-        { t: 1, s: "M 110 40",  f: knots.interpolate.ArcC(110, 57.5, 17.5, 180)           }  // Standing End Curve
+        { t: 1, s: "M 110 40",  f: knots.interpolate.Cubic(110,40, 140,40, 140,75, 110,75)}  // Standing End Curve
     ];
 
     var chart = knots.drawChart(width, height);
-    //knots.drawGrid(chart, 200, 100).attr("transform", scale);
+    knots.drawGrid(chart, 200, 100).attr("transform", scale);
     knots.drawKnot(chart, paths).attr("transform",scale);
 
 
