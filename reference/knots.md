@@ -67,7 +67,7 @@ If your interested in how these knots are drawn, check out the Drawing Knot Seri
 
 - **Grief Knot** - A variant of the Thief knot ![Grief Knot Diagram](/knots/grief-knot.svg)
 
-- **Handcuff Knot** -
+- **Handcuff Knot** - ![Handcuff Knot Diagram](/knots/handcuff-knot.svg)
 
 - **Highwayman&rsquo;s Hitch** -
 

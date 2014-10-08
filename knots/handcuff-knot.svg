@@ -1,0 +1,46 @@
+<!--
+    Handcuff Knot Diagram
+    Copyright © 2014, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="400" height="140" viewBox="0 0 200 70" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- B Loop -->
+    <path d="M 80 45 C 65 45, 65 50, 50 50 C 20 50, 20 10, 50 10 C 65 10, 65 20, 80 20" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 80 45 C 65 45, 65 50, 50 50 C 20 50, 20 10, 50 10 C 65 10, 65 20, 80 20" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- A Segment 3 -->
+    <path d="M 90 10 C 60 10, 70 60, 100 60" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 90 10 C 60 10, 70 60, 100 60" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- A Entry -->
+    <path d="M 0 60 H 70" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 0 60 H 70" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- B Entry -->
+    <path d="M 200 60 H 130" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 200 60 H 130" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- A Segment 1 -->
+    <path d="M 70 60 C 90 60, 100 45, 120 45" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 70 60 C 90 60, 100 45, 120 45" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- B Segment 1 -->
+    <path d="M 130 60 C 110 60, 100 45, 80 45" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 130 60 C 110 60, 100 45, 80 45" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- A Segment 2 -->
+    <path d="M 120 20 C 105 20, 105 10, 90 10" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 120 20 C 105 20, 105 10, 90 10" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- B Segment 2 -->
+    <path d="M 80 20 C 95 20, 95 10, 110 10" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 80 20 C 95 20, 95 10, 110 10" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+    <!-- B Segment 3 -->
+    <path d="M 110 10 C 140 10, 130 60, 100 60" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 110 10 C 140 10, 130 60, 100 60" stroke="#D44" stroke-width="4" fill="transparent"/>
+
+     <!-- A Loop -->
+    <path d="M 120 45 C 135 45, 135 50, 150 50 C 180 50, 180 10, 150 10 C 135 10, 135 20, 120 20" stroke="black" stroke-width="5" fill="transparent"/>
+    <path d="M 120 45 C 135 45, 135 50, 150 50 C 180 50, 180 10, 150 10 C 135 10, 135 20, 120 20" stroke="#D44" stroke-width="4" fill="transparent"/>
+</svg>
