@@ -203,7 +203,7 @@ trait Monad[F[_]] {
 }
 {% endhighlight %}
 
-Clever implicit conversions in [scala.syntax](http://docs.typelevel.org/api/scalaz/stable/7.0.4/doc/#scalaz.syntax.package)
+Clever implicit conversions in [scalaz.syntax](http://docs.typelevel.org/api/scalaz/stable/7.0.4/doc/#scalaz.syntax.package)
 provide useful operators that match or approximate mathematical operators. These include:
 
 - Functor composition:  `∘`
