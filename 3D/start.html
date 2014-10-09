@@ -13,9 +13,10 @@
 
     var VIEW_ANGLE = 45, NEAR = 0.1, FAR = 10000;
     var scene, camera, renderer, controls;
+    var redRope, blueRope;
 
     var chessboard = function() {
-        var SIZE = 20, WIDTH = 8, LENGTH = 8;
+        var SIZE = 20, WIDTH = 16, LENGTH = 16;
 
         var white = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
         var black = new THREE.MeshLambertMaterial({color: 0x666666});
@@ -65,8 +66,13 @@
             camera.updateProjectionMatrix();
         });
 
-        var light = new THREE.HemisphereLight(0x888888, 0xB4B4B4, 1);
+        var light = new THREE.HemisphereLight(0x888888, 0xB4B4B4, 0.5);
         scene.add(light);
+
+        var spotLight = new THREE.SpotLight( 0xffffff, 0.8, 0);
+        spotLight.position.set( 0, 150, 0 );
+        spotLight.castShadow = true;
+        scene.add(spotLight);
 
         var redMaterial = new THREE.MeshLambertMaterial({color: 0xDD4444, side: THREE.DoubleSide, wireframe: false});
         var blueMaterial = new THREE.MeshLambertMaterial({color: 0x2222DD, side: THREE.DoubleSide, wireframe: false});
@@ -86,20 +92,20 @@
 
         console.log(points);
 
-        var redRope = new THREE.Mesh(new THREE.TubeGeometry(new THREE.SplineCurve3(points), 64, 4), redMaterial);
-        var blueRope = new THREE.Mesh(new THREE.TubeGeometry(new THREE.SplineCurve3(points), 64, 4), blueMaterial);
+        redRope = new THREE.Mesh(new THREE.TubeGeometry(new THREE.SplineCurve3(points), 64, 4), redMaterial);
+        blueRope = new THREE.Mesh(new THREE.TubeGeometry(new THREE.SplineCurve3(points), 64, 4), blueMaterial);
 
         blueRope.rotateOnAxis(new THREE.Vector3(0,1,0), Math.PI);
         scene.add(redRope);
         scene.add(blueRope);
 
         var floor = chessboard();
-        floor.translateX(-80);
+        floor.translateX(-160);
         floor.translateY(-50);
-        floor.translateZ(-80);
+        floor.translateZ(-160);
         scene.add(floor);
 
-        controls = new THREE.OrbitControls(camera, renderer.domElement);
+        //controls = new THREE.OrbitControls(camera, renderer.domElement);
         //controls.autoRotate = true;
     };
 
@@ -107,8 +113,11 @@
     var render = function() {
         requestAnimationFrame(render);
 
+        redRope.rotation.y += 0.005;
+        blueRope.rotation.y -= 0.005;
+
         renderer.render(scene, camera);
-        controls.update();
+        //controls.update();
    };
 
     init();
