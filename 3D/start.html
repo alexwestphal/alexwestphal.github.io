@@ -14,7 +14,7 @@
     var VIEW_ANGLE = 45, NEAR = 0.1, FAR = 10000;
     var scene, camera, renderer, controls;
 
-    var floor = function() {
+    var chessboard = function() {
         var SIZE = 20, WIDTH = 8, LENGTH = 8;
 
         var white = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
@@ -71,43 +71,36 @@
         var redMaterial = new THREE.MeshLambertMaterial({color: 0xDD4444, side: THREE.DoubleSide, wireframe: false});
         var blueMaterial = new THREE.MeshLambertMaterial({color: 0x2222DD, side: THREE.DoubleSide, wireframe: false});
 
-        var redPath = new THREE.SplineCurve3([
-            new THREE.Vector3( -100, -10,   0),
-            new THREE.Vector3( - 40, -10,   0),
-            new THREE.Vector3( - 10, -20, - 5),
-            new THREE.Vector3(   20, -30,   0),
-            new THREE.Vector3(   40,   0,  10),
-            new THREE.Vector3(   20,  30,   0),
-            new THREE.Vector3( - 10,  20, - 5),
-            new THREE.Vector3( - 40,  10,   0),
-            new THREE.Vector3( - 70,  10,   0)
-        ]);
-        var bluePath = new THREE.SplineCurve3([
-            new THREE.Vector3(  100, -10,   0),
-            new THREE.Vector3(   40, -10,   0),
-            new THREE.Vector3(   10, -20,   5),
-            new THREE.Vector3( - 20, -30,   0),
-            new THREE.Vector3( - 40,   0, -10),
-            new THREE.Vector3( - 20,  30,   0),
-            new THREE.Vector3(   10,  20,   5),
-            new THREE.Vector3(   40,  10,   0),
-            new THREE.Vector3(   70,  10,   0)
-        ]);
+        var path = new THREE.Path([new THREE.Vector2(-100, -10)]);
+        path.lineTo(-40,-10);
+        path.bezierCurveTo(-10,-10, -10,-30, 20,-30);
+        path.bezierCurveTo(50,-30, 50,30, 20,30);
+        path.bezierCurveTo(-10,30, -10,10, -40,10);
+        path.lineTo(-70, 10);
 
-        var redRope = new THREE.Mesh(new THREE.TubeGeometry(redPath, 64, 4), redMaterial);
-        var blueRope = new THREE.Mesh(new THREE.TubeGeometry(bluePath, 64, 4), blueMaterial);
+        var points = path.getPoints();
+        for(var i=0; i<points.length; i++) {
+            points[i] = new THREE.Vector3(points[i].x, points[i].y, 0);
+        }
+        for(i=1; i<points.length-1; i++) points[i].z = 10*Math.sin(3*i*Math.PI/(points.length-2));
+
+        console.log(points);
+
+        var redRope = new THREE.Mesh(new THREE.TubeGeometry(new THREE.SplineCurve3(points), 64, 4), redMaterial);
+        var blueRope = new THREE.Mesh(new THREE.TubeGeometry(new THREE.SplineCurve3(points), 64, 4), blueMaterial);
+
+        blueRope.rotateOnAxis(new THREE.Vector3(0,1,0), Math.PI);
         scene.add(redRope);
         scene.add(blueRope);
 
-        var f = floor();
-        f.translateX(-80);
-        f.translateY(-50);
-        f.translateZ(-80);
-
-        scene.add(f);
+        var floor = chessboard();
+        floor.translateX(-80);
+        floor.translateY(-50);
+        floor.translateZ(-80);
+        scene.add(floor);
 
         controls = new THREE.OrbitControls(camera, renderer.domElement);
-        controls.autoRotate = true;
+        //controls.autoRotate = true;
     };
 
 
