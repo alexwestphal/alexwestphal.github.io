@@ -1,0 +1,126 @@
+<html>
+<head>
+    <title>Start</title>
+    <style>
+        body { margin: 0; padding: 0; }
+        canvas { width: 100%; height: 100% }
+    </style>
+</head>
+<body>
+<script src="three.min.js"></script>
+<script src="OrbitControls.js"></script>
+<script>
+
+    var VIEW_ANGLE = 45, NEAR = 0.1, FAR = 10000;
+    var scene, camera, renderer, controls;
+
+    var floor = function() {
+        var SIZE = 20, WIDTH = 8, LENGTH = 8;
+
+        var white = new THREE.MeshLambertMaterial({color: 0xFFFFFF});
+        var black = new THREE.MeshLambertMaterial({color: 0x666666});
+
+        var geometry = new THREE.Geometry();
+
+        for(var z=0 ; z<=LENGTH ; z++) for(var x=0; x<=WIDTH; x++) {
+            geometry.vertices.push(new THREE.Vector3( x*SIZE, 0,  z*SIZE ));
+        }
+        for(var z=0 ; z<LENGTH ; z++) for(var x=0; x<WIDTH; x+=2) {
+            var e =  0 == z % 2 ? 0 : 1;
+            var a = z * (WIDTH + 1) + e,
+                b = (z + 1) * (WIDTH + 1) + e;
+
+            geometry.faces.push(
+                    new THREE.Face3( a+x, b+x,   b+x+1 ),
+                    new THREE.Face3( a+x, b+x+1, a+x+1 )
+            );
+        }
+
+        geometry.computeFaceNormals();
+        geometry.computeVertexNormals();
+        geometry.computeBoundingSphere();
+
+        return new THREE.Mesh(geometry, white);
+    };
+
+    var init = function() {
+        scene = new THREE.Scene();
+        var WIDTH = window.innerWidth,
+            HEIGHT = window.innerHeight;
+
+        renderer = new THREE.WebGLRenderer();
+        renderer.setSize(WIDTH, HEIGHT);
+        document.body.appendChild(renderer.domElement);
+
+        camera = new THREE.PerspectiveCamera(VIEW_ANGLE, WIDTH / HEIGHT, NEAR, FAR);
+        scene.add(camera);
+        camera.position.z = 300;
+        camera.position.y = 20;
+
+        window.addEventListener('resize', function() {
+            var WIDTH = window.innerWidth,
+                HEIGHT = window.innerHeight;
+            renderer.setSize(WIDTH, HEIGHT);
+            camera.aspect = WIDTH / HEIGHT;
+            camera.updateProjectionMatrix();
+        });
+
+        var light = new THREE.HemisphereLight(0x888888, 0xB4B4B4, 1);
+        scene.add(light);
+
+        var redMaterial = new THREE.MeshLambertMaterial({color: 0xDD4444, side: THREE.DoubleSide, wireframe: false});
+        var blueMaterial = new THREE.MeshLambertMaterial({color: 0x2222DD, side: THREE.DoubleSide, wireframe: false});
+
+        var redPath = new THREE.SplineCurve3([
+            new THREE.Vector3( -100, -10,   0),
+            new THREE.Vector3( - 40, -10,   0),
+            new THREE.Vector3( - 10, -20, - 5),
+            new THREE.Vector3(   20, -30,   0),
+            new THREE.Vector3(   40,   0,  10),
+            new THREE.Vector3(   20,  30,   0),
+            new THREE.Vector3( - 10,  20, - 5),
+            new THREE.Vector3( - 40,  10,   0),
+            new THREE.Vector3( - 70,  10,   0)
+        ]);
+        var bluePath = new THREE.SplineCurve3([
+            new THREE.Vector3(  100, -10,   0),
+            new THREE.Vector3(   40, -10,   0),
+            new THREE.Vector3(   10, -20,   5),
+            new THREE.Vector3( - 20, -30,   0),
+            new THREE.Vector3( - 40,   0, -10),
+            new THREE.Vector3( - 20,  30,   0),
+            new THREE.Vector3(   10,  20,   5),
+            new THREE.Vector3(   40,  10,   0),
+            new THREE.Vector3(   70,  10,   0)
+        ]);
+
+        var redRope = new THREE.Mesh(new THREE.TubeGeometry(redPath, 64, 4), redMaterial);
+        var blueRope = new THREE.Mesh(new THREE.TubeGeometry(bluePath, 64, 4), blueMaterial);
+        scene.add(redRope);
+        scene.add(blueRope);
+
+        var f = floor();
+        f.translateX(-80);
+        f.translateY(-50);
+        f.translateZ(-80);
+
+        scene.add(f);
+
+        controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.autoRotate = true;
+    };
+
+
+    var render = function() {
+        requestAnimationFrame(render);
+
+        renderer.render(scene, camera);
+        controls.update();
+   };
+
+    init();
+    render();
+
+</script>
+</body>
+</html>
