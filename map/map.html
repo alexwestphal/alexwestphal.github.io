@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    body {
+        margin: 0;
+        background-color: #13181F;
+    }
+
+    div.map {
+        width: 100%;
+    }
+
+
+    path {
+        stroke: #8F8F8F;;
+        stroke-width: 0.25px;
+        stroke-opacity: 0.8;
+        fill: #13181F;
+
+    }
+</style>
+<body>
+<div class="map"></div>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v0.min.js"></script>
+<script>
+
+    var width = 1920, height = 1080;
+
+    var projection = d3.geo.mercator()
+            .center([0, 45 ])
+            .scale(300)
+            .rotate([-180,0]);
+
+    var svg = d3.select("div.map").append("svg")
+            .attr("width", window.innerWidth)
+            .attr("height", window.innerHeight);
+
+    var path = d3.geo.path().projection(projection);
+
+    var g = svg.append("g").attr("transform", "translate(450, 0)");
+
+    // load and display the World
+    d3.json("world.json", function(error, topology) {
+        g.selectAll("path")
+                .data(topojson.object(topology, topology.objects.countries)
+                        .geometries)
+                .enter()
+                .append("path")
+                .attr("d", path)
+    });
+
+
+</script>
+</body>
+</html>
