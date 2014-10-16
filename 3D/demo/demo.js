@@ -259,7 +259,7 @@ Knots.FlagPole = function() {
 Knots.FlagPole.prototype = Object.create(THREE.Object3D.prototype);
 
 Knots.FullWindow = function(opt) {
-    var width = window.innerWidth,
+    var width = window.innerWidth - 360,
         height = window.innerHeight;
 
     var renderer = this.renderer = new THREE.WebGLRenderer();
@@ -272,7 +272,7 @@ Knots.FullWindow = function(opt) {
     camera.position.z = opt.z || 400;
 
     if(opt.resize) window.addEventListener('resize', function() {
-        var width = window.innerWidth,
+        var width = window.innerWidth - 360,
             height = window.innerHeight;
 
         renderer.setSize(width, height);
@@ -364,7 +364,7 @@ var init = function() {
     controls.maxPolarAngle = Math.PI/1.75;
     controls.minDistance = 0;
     controls.maxDistance = 450;
-    controls.autoRotate = true;
+    //controls.autoRotate = true;
 };
 
 
