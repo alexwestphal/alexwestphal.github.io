@@ -8,58 +8,6 @@ var Knots = {};
 Knots.id = function id(x) { return x; };
 Knots.fixed = function(x) { return function() { return x; }; };
 
-Knots.Chessboard = function() {
-    var SIZE = 20, WIDTH = 32, LENGTH = 32;
-
-    var whiteMaterial = new THREE.MeshPhongMaterial({color: 0xFFFFFF});
-    var blackMaterial = new THREE.MeshPhongMaterial({color: 0x202020});
-
-    whiteMaterial.combine = blackMaterial.combine = THREE.MixOperation;
-
-    var whiteGeometry = new THREE.Geometry();
-    var blackGeometry = new THREE.Geometry();
-
-    for(var z=0 ; z<=LENGTH ; z++) for(var x=0; x<=WIDTH; x++) {
-        whiteGeometry.vertices.push(new THREE.Vector3( x*SIZE, 0,  z*SIZE ));
-        blackGeometry.vertices.push(new THREE.Vector3( x*SIZE, 0,  z*SIZE ));
-    }
-    for(var z=0 ; z<LENGTH ; z++) for(var x=0; x<WIDTH; x+=2) {
-        var a = z * (WIDTH + 1) + (z % 2),
-            b = (z + 1) * (WIDTH + 1) + (z % 2);
-
-        whiteGeometry.faces.push(
-            new THREE.Face3( a+x, b+x,   b+x+1 ),
-            new THREE.Face3( a+x, b+x+1, a+x+1 )
-        );
-
-        a = z * (WIDTH + 1) + ((z + 1) % 2);
-        b = (z + 1) * (WIDTH + 1) + ((z + 1) % 2);
-
-        blackGeometry.faces.push(
-            new THREE.Face3( a+x, b+x,   b+x+1 ),
-            new THREE.Face3( a+x, b+x+1, a+x+1 )
-        );
-    }
-
-    whiteGeometry.computeFaceNormals();
-    whiteGeometry.computeVertexNormals();
-    whiteGeometry.computeBoundingSphere();
-
-    blackGeometry.computeFaceNormals();
-    blackGeometry.computeVertexNormals();
-    blackGeometry.computeBoundingSphere();
-
-    this.whiteMesh = new THREE.Mesh(whiteGeometry, whiteMaterial);
-    this.whiteMesh.translateX(-(WIDTH*SIZE/2));
-    this.whiteMesh.translateY(-50);
-    this.whiteMesh.translateZ(-(LENGTH*SIZE/2));
-
-    this.blackMesh = new THREE.Mesh(blackGeometry, blackMaterial);
-    this.blackMesh.translateX(-(WIDTH*SIZE/2));
-    this.blackMesh.translateY(-50);
-    this.blackMesh.translateZ(-(LENGTH*SIZE/2));
-};
-
 
 Knots.Floor = function() {
     THREE.Object3D.call(this);
@@ -300,6 +248,87 @@ Knots.Rope = function(path, opt) {
 }
 Knots.Rope.prototype = Object.create(THREE.Mesh.prototype);
 
+Knots.Finger = function(skinMaterial, jointMaterial, sections) {
+    THREE.Object3D.call(this);
+
+    this.add(new THREE.Mesh(new THREE.SphereGeometry(1.2), jointMaterial));
+
+    var section;
+    if(1 < sections) {
+        section = new THREE.Mesh(new THREE.CylinderGeometry(1.5, 1.5, 4, 24), skinMaterial);
+        section.translateY(2.5);
+        var next = new Knots.Finger(skinMaterial, jointMaterial, sections-1);
+        next.translateY(5); this.add(section, next);
+        next.rotateX(Math.PI/3.75);
+    } else {
+        section = new THREE.Mesh(new THREE.CylinderGeometry(1.3, 1.5, 3, 24), skinMaterial);
+        var tip = new THREE.Mesh(new THREE.SphereGeometry(1.3, 24), skinMaterial);
+        section.translateY(2);tip.translateY(3.5);
+        this.add(section, tip);
+    }
+
+//    this.add(new THREE.Mesh(
+//        new THREE.PlaneGeometry(0.1, 100),
+//        new THREE.MeshLambertMaterial({color: 0xFF0000, side: THREE.DoubleSide})));
+};
+Knots.Finger.prototype = Object.create(THREE.Object3D.prototype);
+
+Knots.Thumb = function(skinMaterial, jointMaterial, sections) {
+    THREE.Object3D.call(this);
+
+    this.add(new THREE.Mesh(new THREE.SphereGeometry(1.4), jointMaterial));
+
+    var section;
+    if(1 < sections) {
+        section = new THREE.Mesh(new THREE.CylinderGeometry(1.75, 1.75, 3, 24), skinMaterial);
+        section.translateY(2);
+        var next = new Knots.Thumb(skinMaterial, jointMaterial, sections-1);
+        next.translateY(4); this.add(section, next);
+        next.rotateX(Math.PI/5); next.rotateY(Math.PI/3);
+    } else {
+        section = new THREE.Mesh(new THREE.CylinderGeometry(1.5, 1.75, 3, 24), skinMaterial);
+        var tip = new THREE.Mesh(new THREE.SphereGeometry(1.5, 24), skinMaterial);
+        section.translateY(2); tip.translateY(3.5);
+        this.add(section, tip);
+    }
+
+//    var xAxis = new THREE.Mesh(
+//        new THREE.PlaneGeometry(0.1, 100),
+//        new THREE.MeshLambertMaterial({color: 0x00FF00, side: THREE.DoubleSide}));
+//    var yAxis = new THREE.Mesh(
+//        new THREE.PlaneGeometry(0.1, 100),
+//        new THREE.MeshLambertMaterial({color: 0xFF0000, side: THREE.DoubleSide}));
+//
+//    xAxis.rotateZ(Math.PI/2);
+//    this.add(xAxis, yAxis);
+};
+Knots.Thumb.prototype = Object.create(THREE.Object3D.prototype);
+
+Knots.Hand = function() {
+    THREE.Object3D.call(this);
+
+    var skinTexture = THREE.ImageUtils.loadTexture("skin.jpg");
+    var skinMaterial = new THREE.MeshPhongMaterial({ map: skinTexture});
+    var jointMaterial = new THREE.MeshPhongMaterial({ color: 0x666666});
+
+    var handGeometry = new THREE.BoxGeometry(13, 13, 3);
+
+    var hand = new THREE.Mesh(handGeometry, skinMaterial);
+    var thumb = new Knots.Thumb(skinMaterial, jointMaterial, 3);
+    var finger1 = new Knots.Finger(skinMaterial, jointMaterial, 3);
+    var finger2 = new Knots.Finger(skinMaterial, jointMaterial, 3);
+    var finger3 = new Knots.Finger(skinMaterial, jointMaterial, 3);
+    var finger4 = new Knots.Finger(skinMaterial, jointMaterial, 3);
+
+    thumb.translateX(-7);  thumb.rotateZ(Math.PI/4); thumb.rotateX(Math.PI/3);
+    finger1.translateY(7); finger1.translateX(-6); finger1.rotateX(Math.PI/3.25);
+    finger2.translateY(7); finger2.translateX(-2);
+    finger3.translateY(7); finger3.translateX(2);
+    finger4.translateY(7); finger4.translateX(6);
+    this.add(hand, thumb, finger1, finger2, finger3, finger4);
+}
+Knots.Hand.prototype = Object.create(THREE.Object3D.prototype);
+
 var init = function() {
 
     fw = new Knots.FullWindow({resize: true});
@@ -359,11 +388,17 @@ var init = function() {
     blueRope.rotateOnAxis(new THREE.Vector3(0,1,0), Math.PI);
     scene.add(redRope, blueRope);
 
+    var hand = new Knots.Hand(); hand.scale.set(4,4,4);
+    hand.rotateX(Math.PI/4); hand.translateZ(-45);
+    hand.translateX(-35); hand.translateY(-8);
+    scene.add(hand);
+
     controls = new THREE.OrbitControls(fw.camera, fw.renderer.domElement);
     controls.minPolarAngle = Math.PI/3.2;
     controls.maxPolarAngle = Math.PI/1.75;
     controls.minDistance = 0;
     controls.maxDistance = 450;
+    //controls.dollyIn(4);
     //controls.autoRotate = true;
 };
 
@@ -371,8 +406,8 @@ var init = function() {
 var render = function() {
     window.requestAnimationFrame(render);
 
-    redRope.rotation.y += 0.005;
-    blueRope.rotation.y -= 0.005;
+    //redRope.rotation.y += 0.005;
+    //blueRope.rotation.y -= 0.005;
 
     fw.render(scene);
     controls.update();
