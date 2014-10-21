@@ -39,7 +39,7 @@ and draws a line from the current position to the one specified by the coordinat
 
 or
 
-`L dx dy`
+`l dx dy`
 
 In a simple example we draw two paths each consisting of two lines. The first uses the absolute variants of the
 commands, and the second uses the relative variants.
