@@ -4,4 +4,4 @@ title: USAR Markings Reference
 ---
 
 
-![Basic Building Marking](/knots/markings/building.svg)
+![Basic Building Marking](/knots/markings/building-example.svg)
