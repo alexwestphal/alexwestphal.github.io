@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Alien Method
+title: The Alien Method (Figure Eight Knot)
 author: Alex Westphal
 tags: knots
 ---

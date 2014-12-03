@@ -1,6 +1,6 @@
 ---
 layout: math-post
-title: 3D Knots (Part 2)
+title: 3D Modelling - Knots
 author: Alex Westphal
 tags: knots webgl threejs
 ---
