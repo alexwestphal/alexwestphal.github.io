@@ -7,7 +7,6 @@ tags: scala magnet
 
 ## The Problem
 
-{% highlight scala %}
 
 ## The Solution
 
