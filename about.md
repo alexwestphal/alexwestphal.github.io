@@ -14,7 +14,7 @@ On a volunteer basis, I hold the following roles:
 - **Firefighter** - [Stoke Fire Brigade](http://www.fire.org.nz/About-Us/All-Regions/Region-4/Pages/Stoke-Volunteer-Fire-Brigade.html),
 [NZ Fire Service](http://www.fire.org.nz/)
 - **USAR Responder** - [Nelson/Tasman Emergency Response Team (NZ-RT2)](http://www.nzrt2.co.nz/)
-- **Venturer Scout Leader** - Iron Duke Sea Scout Group, [Scouts NZ](http://www.scouts.org.nz/)
+- **Venturer Scout Leader** - [Iron Duke Sea Scouts](http://www.facebook.com/irondukeseascouts), [Scouts NZ](http://www.scouts.org.nz/)
 
 My other hobbies and interests include Canoe Polo, Caving, Climbing, Kayaking, Mountaineering, Rogaining, Sailing,
 Theatre (Flying and Lighting) and Tramping.
