@@ -1,0 +1,24 @@
+<!--
+    Building Marking Format
+    Copyright © 2015, Alex Westphal. All rights reserved
+-->
+<svg version="1.1" baseProfile="full" width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+
+    <!-- Square -->
+    <rect x="50" y="50" height="100" width="100" fill="none" stroke="#FF4F00" stroke-width="2"/>
+
+    <!-- Go -->
+    <text x="100" y="70" text-anchor="middle" fill="#FF4F00" font-size="20">G</text>
+
+    <!-- Team -->
+    <text x="100" y="95" text-anchor="middle" fill="#FF4F00" font-size="20">Team</text>
+
+    <!-- Time In -->
+    <text x="100" y="120" text-anchor="middle" fill="#FF4F00" font-size="20">Time In</text>
+
+    <!-- Time Out -->
+    <text x="100" y="140" text-anchor="middle" fill="#FF4F00" font-size="20">Time Out</text>
+
+    <!-- Finished -->
+    <circle cx="100" cy="100" r="80" fill="none" stroke="#FF4F00" stroke-width="2" />
+</svg>
