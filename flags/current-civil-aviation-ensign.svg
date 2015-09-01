@@ -1,0 +1,25 @@
+<svg version="1.1" baseProfile="full" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" zoomAndPan="magnify"
+   id="Civil_Air_Ensign_of_New_Zealand"
+   viewBox="-16.875 -7.5 33.75 15"
+   width="1200" height="600">
+  <defs>
+    <clipPath id="border">
+      <rect x="-16.875" y="-7.5" width="33.75" height="15"/>
+    </clipPath>
+  </defs>
+<rect width="33.75" height="16.875" x="-16.875" y="-8.4375" fill="#6399ab" />
+  <g transform="matrix(0.45,0,0,0.45,-9.28125,-5.0625)" clip-path="url(#border)">
+    <circle r="25" fill="#00247D"/>
+    <path d="M -22.5,-10 L 22.5,10 M -22.5,10 L 22.5,-10" stroke-width="3" stroke="white" id="diags_white"/>
+    <path d="M -22.5,-10 L 22.5,10 M -22.5,10 L 22.5,-10" stroke-width="2" stroke="#CF142B" id="diags_red"/>
+    <path stroke="none" fill="white" d="M 0,0 l 22.5,10 h -3 l -22.5,-10 M 0,0 l 22.5,-10 h 3 l -22.5,10 M 0,0 l -22.5,10 h -3 l 22.5,-10 M 0,0 l -22.5,-10 h 3 l 22.5,10" id="eraser_white"/>
+<comment>I think the above two lines give the simplest way to make the diagonals</comment>
+    <path d="M -22.5,0 H 22.5 M 0,-10 V 10" stroke-width="5" stroke="white" id="cross_white"/>
+    <path d="M -22.5,0 H 22.5 M 0,-10 V 10" stroke-width="3" stroke="#CF142B" id="cross_red"/>
+  </g>
+<path d="M -16.875,0 H 16.875 M 0,-8.4375 V 8.4375" stroke-width="3.375" stroke="white"/>
+<path d="M -16.875,0 H 16.875 M 0,-8.4375 V 8.4375" stroke-width="2.25" stroke="#00247D"/>
+<path d="M 9.28125,6.7364094 L 9.4140383,7.1297325 L 9.8291447,7.1344783 L 9.4961059,7.3823108 L 9.6198677,7.7785673 L 9.28125,7.5384129 L 8.9426323,7.7785673 L 9.0663941,7.3823108 L 8.7333553,7.1344783 L 9.1484617,7.1297325 L 9.28125,6.7364094 z " fill="#cf142b" id="AlphaCrucis" />
+<path d="M 10.673815,3.6595839 L 10.790005,4.0037417 L 11.153223,4.0078941 L 10.861814,4.2247474 L 10.970106,4.5714718 L 10.673815,4.361337 L 10.377525,4.5714718 L 10.485816,4.2247474 L 10.194407,4.0078941 L 10.557625,4.0037417 L 10.673815,3.6595839 z " fill="#cf142b" id="DeltaCrucis" />
+  <use transform="translate(0,-4.5)" id="GammaCrucis" xlink:href="#AlphaCrucis" />
+  <use transform="translate(-1.531837,-2.737836)" id="BetaCrucis" xlink:href="#AlphaCrucis" /></svg>
