@@ -27,7 +27,7 @@ Similarly the Royal NZ Navy use the Naval (white) Ensign with reversed colours:
 There is also an entire other category of derivative flags that keep the flag intact and placed in the canton. Examples
 of this type include the NZ Police (pictured below), NZ Fire Service, and NZ Customs.
 
-<img src="/flags/current-police.png" width="600" height="300"/>
+<img src="/flags/current-police-ensign.svg" width="600" height="300"/>
 
 
 ## Proposed Flag
@@ -44,7 +44,7 @@ And Silver Fern (Black, White, Blue):
 
 <img src="/flags/fern-BWB.svg" width="600" height="300"/>
 
-Note: The images I been able to get my hands on are an early design of Kyle Lockwood's and don't entirely match the
+Note: The images I have been able to get my hands on are an early design of Kyle Lockwood's and don't entirely match the
 official designs. Also the official version of the Black/White/Blue Fern uses a lighter colour of blue.
 
 
